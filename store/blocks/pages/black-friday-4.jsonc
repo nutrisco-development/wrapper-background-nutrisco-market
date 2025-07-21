@@ -1,0 +1,90 @@
+{
+  "store.custom#page-cyber4": {
+    "blocks": ["search-result-layout.customQuery#page-cyber4"]
+  },
+  "search-result-layout.customQuery#page-cyber4": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        //"hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "251",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-cyber4", "search-result-layout.mobile#page-cyber4", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-cyber4": {
+    "children": [
+      "flex-layout.row#page-cyber4-banner",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile#page-cyber4": {
+    "children": [
+      "flex-layout.row#page-cyber4-banner",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#page-cyber4-banner": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorBottom"],
+      "marginTop": 4,
+      "paddingBottom": 10,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-cyber4-banner"]
+  },
+  "list-context.image-list#page-cyber4-banner": {
+    "children": ["slider-layout#page-cyber4-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/carne-variedades-hasta-50-off-desk.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/carne-variedades-hasta-50-off-mob.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-cyber4-banner": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true
+    }
+  }
+}

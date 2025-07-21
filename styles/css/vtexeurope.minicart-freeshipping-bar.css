@@ -1,0 +1,105 @@
+.freigthScaleContainer {
+  margin-top: 5px;
+  box-shadow: none !important;
+}
+.freigthScaleContainer .text2 {
+  font-size: unset;
+}
+.sliderContainer {
+  margin: 5px 0 !important;
+  height: 8px !important;
+}
+.barContainer {
+  background: #009eb1 !important;
+  height: 6px !important;
+}
+.sliderText {
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding: 0;
+}
+.text0 {
+}
+
+.text1 {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.text2 {
+  text-transform: uppercase;
+  font-size: 0 !important;
+  margin-left: 2px;
+  text-align: center;
+  display: block;
+}
+.text2::before {
+  content: 'envío gratis🎉';
+  font-size: 0.625rem !important;
+  font-size: 0.75rem !important;
+  text-align: center;
+}
+.text3 {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+.text4 {
+  font-size: 0 !important;
+  text-transform: uppercase;
+  /*font-size: 0.625rem !important;*/
+}
+.text4::before {
+  content: '¡Conseguiste tu envío gratis en esta Compra!';
+  font-size: 0.75rem !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+.currencyContainer {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+.currencyInteger {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+.currencyCode {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+
+@media (max-width: 420px) {
+  .text1 {
+    display: block !important;
+    font-size: 0.625rem !important;
+  }
+  .text2::before {
+    font-size: 0.625rem !important;
+  }
+  .text3 {
+    font-size: 0.625rem !important;
+  }
+  .text4::before {
+    font-size: 0.625rem !important;
+  }
+  .currencyContainer {
+    text-transform: uppercase;
+    font-size: 0.625rem !important;
+  }
+  .currencyInteger {
+    text-transform: uppercase;
+    font-size: 0.625rem !important;
+  }
+  .currencyCode {
+    text-transform: uppercase;
+    font-size: 0.625rem !important;
+  }
+}
+
+/**/
+/* :global(.flexRowContent--MiniCartBarHeader) .freigthScaleContainer {
+  background-color: rebeccapurple;
+} */

@@ -1,0 +1,25 @@
+.product-identifier--itemId {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #888888;
+  font-weight: 500;
+  font-family: TT Hoves, Helvetica, sans-serif;
+}
+
+.product-identifier--productReference {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #888888;
+  font-weight: 500;
+  font-family: TT Hoves, Helvetica, sans-serif;
+}
+.product-identifier--productId {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #888888;
+  font-weight: 500;
+  font-family: TT Hoves, Helvetica, sans-serif;
+}

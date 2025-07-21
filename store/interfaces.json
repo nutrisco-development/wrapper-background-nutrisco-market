@@ -1,0 +1,128 @@
+{
+  "pattern-background-home": {
+    "component": "PatternBackgroundHome"
+  },
+  "pattern-background-view": {
+    "component": "PatternBackgroundView"
+  },
+  "widget-customer-support": {
+    "component": "WidgetCustomerSupport",
+    "render": "client"
+  },
+  "menu-desktop-header": {
+    "component": "MenuDesktopHeader"
+  },
+  "menu-mobile-header": {
+    "component": "MenuMobile"
+  },
+  "icon-user-circle": {
+    "component": "IconUserCircle"
+  },
+  "terms-conditions": {
+    "component": "TermsConditions"
+  },
+  "frequently-asked-questions": {
+    "component": "FrequentlyAskedQuestions"
+  },
+  "terms-conditions-children-day": {
+    "component": "TermsConditionsChildrenDay"
+  },
+  "shipping-policy": {
+    "component": "ShippingPolicy"
+  },
+  "privacy-policy": {
+    "component": "PrivacyPolicy"
+  },
+  "payment-methods": {
+    "component": "PaymentMethods"
+  },
+  "contact-form": {
+    "component": "ContactForm",
+    "render": "client"
+  },
+  "home-open-graph": {
+    "component": "HomeOpenGraph"
+  },
+  "template-recipe-food-content": {
+    "component": "TemplateRecipeFood"
+  },
+  "recipe-content-ceviche-atun": {
+    "component": "RecetaCevicheAtun"
+  },
+  "recipe-content-ceviche-lomos-jurel": {
+    "component": "RecetaCevicheLomosJurel"
+  },
+  "recipe-content-chupe-jurel": {
+    "component": "RecetaChupeJurel"
+  },
+  "recipe-content-algondigas-jurel-salsa-tomates": {
+    "component": "RecetaAlgondigasJurelSalsaTomates"
+  },
+  "recipe-content-filetes-de-jurel-con-pure-de-arvejas": {
+    "component": "RecetaFiletesJurelPureArvejas"
+  },
+  "inscription-client": {
+    "component": "InscriptionClient",
+    "render": "client"
+  },
+  "recipe-content-arroz-cremoso-jurel": {
+    "component": "RecetaArrozCremosoJurel"
+  },
+  "recipe-content-albondigas-jurel-espagueti": {
+    "component": "RecetaAlbondigasJurelEspagueti"
+  },
+  "recipe-content-receta-estofado-jurel-pimentones-asados": {
+    "component": "RecetaEstofadoJurelPimentonesAsados"
+  },
+  "recipe-content-receta-choritos-papas": {
+    "component": "RecetaChoritosPapas"
+  },
+  "recipe-content-receta-choritos-thai": {
+    "component": "RecetaChoritosThai"
+  },
+  "recipe-content-receta-reineta-arvejada": {
+    "component": "RecetaReinetaArvejada"
+  },
+  "recipe-content-tomate-jurel-y-quinoa": {
+    "component": "RecetaTomatesRellenosJurelYQuinoa"
+  },
+  "recipe-content-rollitos-jurel-y-oliva": {
+    "component": "RecetaRollitosPapelArrozJurelAceiteOliva"
+  },
+  "recipe-content-carpaccio-locos-salsa-verde": {
+    "component": "RecetaCarpaccioLocosSalsaVerde"
+  },
+  "recipe-content-salpicon-mariscos-pesto": {
+    "component": "RecetaSalpiconMariscosPesto"
+  },
+  "recipe-content-lasana-albondiga-bechame": {
+    "component": "RecetaLasanaAlbondigaBechame"
+  },
+  "recipe-content-sopa-choritos-y-vino-blanco": {
+    "component": "RecetaSopaChoritosVinoBlanco"
+  },
+  "recipe-content-choritos-puttanesca": {
+    "component": "RecetaChoritosPuttanesca"
+  },
+  "recipe-content-tarta-merluza-hojaldre": {
+    "component": "RecetaTartaMerluzaHojaldre"
+  },
+  "recipe-content-reineta-horno-papas-finas-hierbas": {
+    "component": "RecetaReinetaHornoPapasFinasHierbas"
+  },
+  "recipe-content-empanaditas-integrales-jurel": {
+    "component": "RecetaEmpanaditasIntegralesJurel"
+  },
+  "button-minicart-checkout": {
+    "component": "ButtonMiniCartCheckout"
+  },
+  "custom-product-quantity": {
+    "component": "CustomProductQuantity"
+  },
+  "button-login": {
+    "component": "ButtonLogin"
+  },
+  "wrapper-background": {
+    "component": "WrapperBackground"
+  }
+}

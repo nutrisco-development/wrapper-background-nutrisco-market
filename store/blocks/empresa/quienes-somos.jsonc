@@ -1,0 +1,74 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "pattern-background-home",
+      "flex-layout.row#about-us-banner",
+      "flex-layout.row#about-us-title",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#about-us-content"
+    ]
+  },
+  "flex-layout.row#about-us-banner": {
+    "props": {
+      "blockClass": "banner-brand-logos",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#about-us-banner"]
+  },
+  "list-context.image-list#about-us-banner": {
+    "children": ["slider-layout#about-us-banner"],
+    "props": {
+      "preload": true,
+      "fullWidth": true,
+      "height": 600,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-1-DESKTOP.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-1-MOBILE.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#about-us-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false
+    }
+  },
+  "flex-layout.row#about-us-title": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"]
+    },
+    "children": ["rich-text#about-us-title"]
+  },
+  "rich-text#about-us-title": {
+    "props": {
+      "text": "# LA MESA DE TODOS\n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#about-us-content": {
+    "props": {
+      "marginTop": 5,
+      "marginBottom": 5,
+      "horizontalAlign": "center",
+      "blockClass": "StoreContainer"
+    },
+    "children": ["rich-text#about-us-content"]
+  },
+  "rich-text#about-us-content": {
+    "props": {
+      "text": "Somos un sitio que busca ofrecer la mayor variedad de productos y sabores posibles. Con nuevas promociones cada semana, y así darle en el gusto a todos los que se sientan en esta mesa. Hoy estamos llegando a las principales ciudades de cada región.\n\nComo Nutrisco Chile S.A. estamos ubicados en Panamericana Norte Ruta 5, Km 15 Lt 1, Lt 1 - 1 Fdo La Montaña Colina y nuestro representante legal es Paula Levin. Como empresa contamos con el respaldo y la confianza de Empresas Copec, buscando llegar cada vez más lejos y tocar cada vez más puertas; para entregarte la calidad que te mereces..\n\nPorque nuestra misión siempre ha sido una:\n\n**Mejorar cada uno de tus momentos.**",
+      "blockClass": "TextAboutUs"
+    }
+  }
+}

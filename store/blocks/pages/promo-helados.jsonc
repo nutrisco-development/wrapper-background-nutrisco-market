@@ -1,0 +1,199 @@
+{
+  "store.custom#page-promo-helados": {
+    "blocks": [
+      "responsive-layout.desktop#page-promo-helados",
+      "responsive-layout.tablet#page-promo-helados",
+      "responsive-layout.phone#page-promo-helados"
+    ]
+  },
+  "responsive-layout.desktop#page-promo-helados": {
+    "children": ["search-result-layout.customQuery#page-promo-helados-desktop"]
+  },
+  "responsive-layout.tablet#page-promo-helados": {
+    "children": ["search-result-layout.customQuery#page-promo-helados-mobile"]
+  },
+  "responsive-layout.phone#page-promo-helados": {
+    "children": ["search-result-layout.customQuery#page-promo-helados-mobile"]
+  },
+  "search-result-layout.customQuery#page-promo-helados-desktop": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        //"hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "259",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-promo-helados", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-promo-helados": {
+    "children": [
+      "flex-layout.row#page-promo-helados-banner",
+      "flex-layout.row#search-title-custom-helados",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#page-promo-helados-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-promo-helados-banner"]
+  },
+  "list-context.image-list#page-promo-helados-banner": {
+    "children": ["slider-layout#page-promo-helados-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-PROMO-HELADOS-3X-ENE-2023-DESK.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-PROMO-HELADOS-3X-ENE-2023-MOB.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-promo-helados-banner": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.row#banner-slider-helados": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer"]
+    },
+    "children": ["flex-layout.col#image-slide-helados", "flex-layout.col#carrusel-slide-helados"]
+  },
+
+  "flex-layout.col#image-slide-helados": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["image#image-slide-helados"]
+  },
+
+  "image#image-slide-helados": {
+    "props": {
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/cover-helados-new-01.jpg",
+      "maxHeight": "430px"
+    }
+  },
+
+  "flex-layout.col#carrusel-slide-helados": {
+    "props": {
+      "width": "70%",
+      "blockClass": "BannerCarruselCustomCol2"
+    },
+    "children": ["flex-layout.row#carousel-banner-helados-desk"]
+  },
+
+  "search-result-layout.customQuery#page-promo-helados-mobile": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        // "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "259",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.mobile#page-promo-helados", "search-not-found-layout"]
+  },
+  "search-result-layout.mobile#page-promo-helados": {
+    "children": [
+      "flex-layout.row#page-promo-helados-banner",
+      //"flex-layout.row#headline-banner-carousel-helados",
+      //"flex-layout.row#carousel-banner-helados-desk",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#headline-banner-carousel-helados": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#headline-banner-carousel-helados"]
+  },
+
+  "rich-text#headline-banner-carousel-helados": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Revisa todas nuestras ofertas",
+      "blockClass": "HeadlineBannerCarousel"
+    }
+  },
+  "flex-layout.row#carousel-banner-helados-desk": {
+    "children": ["list-context.product-list#carousel-banner-helados-desk"]
+  },
+  "list-context.product-list#carousel-banner-helados-desk": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carousel-banner-helados-desk"],
+    "props": {
+      "category": "137/138",
+      // "hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByBestDiscountDESC",
+      "skusFilter": "ALL_AVAILABLE",
+      "queryField": "Yes",
+      "mapField": "Promotion",
+      "simulationBehavior": "default"
+    }
+  },
+  "slider-layout#carousel-banner-helados-desk": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#search-title-custom-helados": {
+    "props": {
+      "blockClass": ["StoreContainer", "DynamicTitleCustom"]
+    },
+    "children": ["search-title.v2"]
+  }
+}

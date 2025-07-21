@@ -1,0 +1,95 @@
+{
+  "store.custom#recipe-list-food": {
+    "blocks": [
+      "responsive-layout.desktop#recipe-list-food",
+      "responsive-layout.tablet#recipe-list-food",
+      "responsive-layout.phone#recipe-list-food"
+    ]
+  },
+  "responsive-layout.desktop#recipe-list-food": {
+    "children": [
+      "pattern-background-home",
+      "flex-layout.row#recipe-list-food-banner",
+      "flex-layout.row#recipe-food-title",
+      "flex-layout.row#recipe-food-content"
+    ]
+  },
+  "responsive-layout.tablet#recipe-list-food": {
+    "children": [
+      "pattern-background-home",
+      "flex-layout.row#recipe-list-food-banner",
+      "flex-layout.row#recipe-food-title",
+      "flex-layout.row#recipe-food-content"
+    ]
+  },
+  "responsive-layout.phone#recipe-list-food": {
+    "children": [
+      "pattern-background-home",
+      "flex-layout.row#recipe-list-food-banner",
+      "flex-layout.row#recipe-food-title",
+      "flex-layout.row#recipe-food-content"
+    ]
+  },
+  "flex-layout.row#recipe-food-title": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "fullWidth": false,
+      "paddingTop": 2,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#recipe-food-title"]
+  },
+  "rich-text#recipe-food-title": {
+    "props": {
+      "text": "# nuestas recetas \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["section-title", "section-recipe-food"],
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#recipe-list-food-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 6,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+    //"children": ["list-context.image-list#recipe-list-food-banner"]
+  },
+  "list-context.image-list#recipe-list-food-banner": {
+    "children": ["slider-layout#recipe-list-food-banner"],
+    "props": {
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/top-banner-desktop-helado-2022.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-BRAND-HD-MOBILE-2022.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#recipe-list-food-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": ["ImageBannerPageCustom"]
+    }
+  },
+  "flex-layout.row#recipe-food-content": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "fullWidth": false,
+      "paddingTop": 0,
+      "horizontalAlign": "center"
+    },
+    "children": ["template-recipe-food-content"]
+  }
+}

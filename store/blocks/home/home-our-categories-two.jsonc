@@ -1,0 +1,109 @@
+{
+  "flex-layout.row#HomeOurCategoriesTwo": {
+    "children": ["list-context.image-list#HomeOurCategoriesTwo"],
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorBottom"],
+      "fullWidth": false
+    }
+  },
+  "list-context.image-list#HomeOurCategoriesTwo": {
+    "children": ["slider-layout#HomeOurCategoriesTwo"],
+    "props": {
+      // "height": 120,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-1v3.png",
+          "description": "congelados",
+          "link": {
+            "openNewTab": false,
+            "title": "congelados",
+            "url": "/congelados"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-3v3.png",
+          "description": "conservas",
+          "link": {
+            "openNewTab": false,
+            "title": "conservas",
+            "url": "/conservas"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-4v3.png",
+          "description": "abarrotes",
+          "link": {
+            "openNewTab": false,
+            "title": "abarrote",
+            "url": "/abarrote"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-5v3.png",
+          "description": "frescos y lacteos",
+          "link": {
+            "openNewTab": false,
+            "title": "frescos y lacteos",
+            "url": "/frescos-y-lacteos"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-6v3.png",
+          "description": "bebestibles",
+          "link": {
+            "openNewTab": false,
+            "title": "bebestible",
+            "url": "/bebestible"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-10v3.png",
+          "description": "platos preparados",
+          "link": {
+            "openNewTab": false,
+            "title": "platos preparados",
+            "url": "/congelados/platos-preparados"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-9v3.png",
+          "description": "packs",
+          "link": {
+            "openNewTab": false,
+            "title": "packs",
+            "url": "/packs?_q=packs&map=ft"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-8v3.png",
+          "description": "mascotas",
+          "link": {
+            "openNewTab": false,
+            "title": "mascotas",
+            "url": "/pages/mascotas"
+          }
+        },
+        {
+          "image": "https://orizonb2ccl.vtexassets.com/arquivos/CIRCLE-BLUE-HOME-7v3.png",
+          "description": "nutracéuticos",
+          "link": {
+            "openNewTab": false,
+            "title": "nutracéuticos",
+            "url": "/nutraceuticos"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#HomeOurCategoriesTwo": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "blockClass": "HomeOurCategoriesTwoImage"
+    }
+  }
+}

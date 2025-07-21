@@ -1,0 +1,75 @@
+// responsive layout home
+{
+  "responsive-layout.desktop#HomeCarouselProducts": {
+    //  "children": ["flex-layout.row#page-cyber-banner", "flex-layout.row#banner-slider-cyber"]
+    "children": ["flex-layout.row#CarouselCategory-1", "flex-layout.row#CarouselCategory-2", "flex-layout.row#CarouselCategory-3"]
+  },
+  "responsive-layout.tablet#HomeCarouselProducts": {
+    "children": [
+      "flex-layout.row#CarouselCategoryHome-Headline-1",
+      "flex-layout.row#CarouselCategory-1-Slider",
+      "flex-layout.row#CarouselCategoryHome-Headline-2",
+      "flex-layout.row#CarouselCategory-2-Slider",
+      "flex-layout.row#CarouselCategoryHome-Headline-3",
+      "flex-layout.row#CarouselCategory-3-Slider"
+    ]
+  },
+  "responsive-layout.phone#HomeCarouselProducts": {
+    "children": [
+      "flex-layout.row#CarouselCategoryHome-Headline-1",
+      "flex-layout.row#CarouselCategory-1-Slider",
+      "flex-layout.row#CarouselCategoryHome-Headline-2",
+      "flex-layout.row#CarouselCategory-2-Slider",
+      "flex-layout.row#CarouselCategoryHome-Headline-3",
+      "flex-layout.row#CarouselCategory-3-Slider"
+    ]
+  },
+  "flex-layout.row#CarouselCategoryHome-Headline-1": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#CarouselCategoryHome-Headline-1"]
+  },
+  "rich-text#CarouselCategoryHome-Headline-1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Pescados](/conservas/pescados)",
+      "blockClass": ["HeadlineBannerCarousel", "HeadlineBannerCarouselLightBlueBrand"]
+    }
+  },
+
+  "flex-layout.row#CarouselCategoryHome-Headline-2": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#CarouselCategoryHome-Headline-2"]
+  },
+  "rich-text#CarouselCategoryHome-Headline-2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Helados](/congelados/helados)",
+      "blockClass": ["HeadlineBannerCarousel", "HeadlineBannerCarouselLightBlueBrand"]
+    }
+  },
+
+  "flex-layout.row#CarouselCategoryHome-Headline-3": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#CarouselCategoryHome-Headline-3"]
+  },
+  "rich-text#CarouselCategoryHome-Headline-3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "[Abarrotes](/abarrote)",
+      "blockClass": ["HeadlineBannerCarousel", "HeadlineBannerCarouselLightBlueBrand"]
+    }
+  }
+}
+// responsive layout home

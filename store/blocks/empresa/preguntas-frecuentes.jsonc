@@ -1,0 +1,69 @@
+{
+  "store.custom#frecuently-asqued-questions": {
+    "blocks": [
+      "pattern-background-home",
+      "flex-layout.row#frecuently-asqued-questions-banner",
+      "flex-layout.row#frecuently-asqued-questions-title",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#frecuently-asqued-questions-content"
+    ]
+  },
+  "flex-layout.row#frecuently-asqued-questions-banner": {
+    "props": {
+      "blockClass": "banner-brand-logos",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#frecuently-asqued-questions-banner"]
+  },
+  "list-context.image-list#frecuently-asqued-questions-banner": {
+    "children": ["slider-layout#frecuently-asqued-questions-banner"],
+    "props": {
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-FAQ-PAGE-DESK.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-FAQ-PAGE-MOB.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#frecuently-asqued-questions-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false
+    }
+  },
+  "flex-layout.row#frecuently-asqued-questions-title": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"]
+    },
+    "children": ["rich-text#frecuently-asqued-questions-title"]
+  },
+  "rich-text#frecuently-asqued-questions-title": {
+    "props": {
+      "text": "# PREGUNTAS FRECUENTES \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#frecuently-asqued-questions-content": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 4,
+      "colSizing": "auto",
+      "colGap": 8,
+      "preventVerticalStretch": true,
+      "blockClass": "StoreContainer"
+    },
+    "children": ["frequently-asked-questions"]
+  }
+}

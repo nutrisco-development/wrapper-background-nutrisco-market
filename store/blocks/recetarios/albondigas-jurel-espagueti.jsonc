@@ -1,0 +1,172 @@
+{
+  "store.custom#recipe-food-pattern-7": {
+    "blocks": [
+      "responsive-layout.desktop#recipe-food-pattern7",
+      "responsive-layout.tablet#recipe-food-pattern7",
+      "responsive-layout.phone#recipe-food-pattern7"
+    ]
+  },
+  "responsive-layout.desktop#recipe-food-pattern7": {
+    "children": [
+      "pattern-background-home",
+      "flex-layout.row#recipe-food-pattern7-title",
+      "flex-layout.row#recipe-food-pattern7-subtitle",
+      "flex-layout.row#recipe-food-pattern7-content",
+      //"flex-layout.row#recipe-food-pattern7-call-to-action",
+      "__fold__",
+      "flex-layout.row#recipe-food-pattern7-title2",
+      "flex-layout.row#shelf-recipe-food-pattern7",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#recipe-food-pattern7-call-to-action-2"
+    ]
+  },
+  "responsive-layout.tablet#recipe-food-pattern7": {
+    "children": [
+      "pattern-background-home",
+      "flex-layout.row#recipe-food-pattern7-title",
+      "flex-layout.row#recipe-food-pattern7-subtitle",
+      "flex-layout.row#recipe-food-pattern7-content",
+      //"flex-layout.row#recipe-food-pattern7-call-to-action",
+      "__fold__",
+      "flex-layout.row#recipe-food-pattern7-title2",
+      "flex-layout.row#shelf-recipe-food-pattern7",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#recipe-food-pattern7-call-to-action-2"
+    ]
+  },
+  "responsive-layout.phone#recipe-food-pattern7": {
+    "children": [
+      "pattern-background-home",
+      "flex-layout.row#recipe-food-pattern7-title",
+      "flex-layout.row#recipe-food-pattern7-subtitle",
+      "flex-layout.row#recipe-food-pattern7-content",
+      //"flex-layout.row#recipe-food-pattern7-call-to-action",
+      "__fold__",
+      "flex-layout.row#recipe-food-pattern7-title2",
+      "flex-layout.row#shelf-recipe-food-pattern7",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#recipe-food-pattern7-call-to-action-2"
+    ]
+  },
+  "flex-layout.row#recipe-food-pattern7-title": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"],
+      "fullWidth": false,
+      "paddingTop": 2,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#recipe-food-pattern7-title"]
+  },
+  "rich-text#recipe-food-pattern7-title": {
+    "props": {
+      "text": "# Albóndigas de Jurel con espagueti \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["section-title", "section-recipe-food"],
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#recipe-food-pattern7-title2": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"],
+      "fullWidth": false,
+      "paddingTop": 2,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#recipe-food-pattern7-title2"]
+  },
+  "rich-text#recipe-food-pattern7-title2": {
+    "props": {
+      "text": "## Productos de Receta \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["section-title", "section-recipe-food"],
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#recipe-food-pattern7-subtitle": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"],
+      "fullWidth": false,
+      "paddingTop": 0,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#recipe-food-pattern7-subtitle"]
+  },
+  "rich-text#recipe-food-pattern7-subtitle": {
+    "props": {
+      "text": "## Esta receta te hará un experto en la cocina.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["section-title", "short-description-recipe-food"],
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#recipe-food-pattern7-content": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "fullWidth": false,
+      "paddingTop": 0,
+      "horizontalAlign": "center"
+    },
+    "children": ["recipe-content-albondigas-jurel-espagueti"]
+  },
+  "flex-layout.row#shelf-recipe-food-pattern7": {
+    "props": {
+      "blockClass": ["featured-product-carousel", "StoreContainer", "StoreContainerRecipe"],
+      "marginTop": 7,
+      "marginBottom": 4
+      //"paddingBottom": 10
+    },
+    "children": ["list-context.product-list#shelf-recipe-food-pattern7"]
+  },
+  "list-context.product-list#shelf-recipe-food-pattern7": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-recipe-food-pattern7"],
+    "props": {
+      "collection": "230",
+      //"hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByTopSaleDESC",
+      "specificationFilters": [],
+      "skusFilter": "ALL_AVAILABLE"
+    }
+  },
+  "slider-layout#shelf-recipe-food-pattern7": {
+    "props": {
+      "itemsPerPage": {
+        "(min-width:1280px)": 6,
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#recipe-food-pattern7-call-to-action-2": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "fullWidth": false,
+      "horizontalAlign": "center",
+      "paddingTop": 5
+    },
+    "children": ["link#recipe-food-pattern7-call-to-action-2"]
+  },
+  "link#recipe-food-pattern7-call-to-action-2": {
+    "props": {
+      "blockClass": ["link-recipe-food-pattern-call-to-action", "link-recipe-food-pattern-call-to-action-2"],
+      "href": "/recetarios",
+      "label": "ir a recetarios"
+    }
+  }
+}

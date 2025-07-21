@@ -1,0 +1,10 @@
+{
+  "flex-layout.row#HomeBtnLogin": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"],
+      "fullWidth": false,
+      "horizontalAlign": "center"
+    },
+    "children": ["drawer#login"]
+  }
+}

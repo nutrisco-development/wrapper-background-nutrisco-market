@@ -1,0 +1,77 @@
+{
+  // #1
+  "flex-layout.row#CarouselCategory-3": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer"]
+    },
+    "children": ["flex-layout.col#CarouselCategory-3-Image", "flex-layout.col#CarouselCategory-3-Slider"]
+  },
+  "flex-layout.col#CarouselCategory-3-Image": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["rich-text#CarouselCategory-3-ImageTitle", "image#CarouselCategory-3-Image"]
+  },
+  "rich-text#CarouselCategory-3-ImageTitle": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      //"text": "Abarrotes",
+      "text": "[Abarrotes](/abarrote)",
+      "blockClass": ["CarouselCategoryImageTitle", "BgLightBlueBrand"]
+    }
+  },
+  "image#CarouselCategory-3-Image": {
+    "props": {
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/HomeCarouselProduct3.png",
+      "maxHeight": "430px",
+      "link": {
+        "url": "/abarrote",
+        "attributeTitle": "Abarrotes",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "flex-layout.col#CarouselCategory-3-Slider": {
+    "props": {
+      "width": "70%",
+      "blockClass": "BannerCarruselCustomCol2"
+    },
+    "children": ["flex-layout.row#CarouselCategory-3-Slider"]
+  },
+  "flex-layout.row#CarouselCategory-3-Slider": {
+    "children": ["list-context.product-list#CarouselCategory-3-Slider"]
+  },
+  "list-context.product-list#CarouselCategory-3-Slider": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#CarouselCategory-3-Slider"],
+    "props": {
+      "category": "143",
+      //"hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByTopSaleDESC",
+      "specificationFilters": [],
+      "skusFilter": "ALL_AVAILABLE"
+    }
+  },
+  "slider-layout#CarouselCategory-3-Slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+
+  ///
+}

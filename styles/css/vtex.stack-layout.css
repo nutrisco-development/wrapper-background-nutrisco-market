@@ -1,0 +1,16 @@
+.stackItem--product {
+  width: 100%;
+}
+
+.stackItem--quickview {
+  right: 0;
+  top: 0;
+  left: auto;
+}
+
+.stackItem--FlagTopDiscount {
+  left: 0;
+  right: 0px;
+  top: 5px;
+  z-index: 1 !important ;
+}

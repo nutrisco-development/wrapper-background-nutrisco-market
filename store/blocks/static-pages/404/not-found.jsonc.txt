@@ -1,0 +1,145 @@
+// {
+//   "store.not-found#search": {
+//     "blocks": ["flex-layout.row#not-found-banner", "flex-layout.row#not-found--recomendados", "flex-layout.row#not-found--sugeridos"]
+//   },
+//   "store.not-found#product": {
+//     "blocks": ["flex-layout.row#not-found-banner", "flex-layout.row#not-found--recomendados", "flex-layout.row#not-found--sugeridos"]
+//   },
+//   "flex-layout.row#not-found-banner": {
+//     "children": ["rich-text#not-found--hello"],
+//     //"children": ["responsive-image#not-found-banner"],
+//     "props": {
+//       "blockClass": "orderplaced-banner"
+//     }
+//   },
+//   "rich-text#not-found--hello": {
+//     "props": {
+//       "text": "not-found--hello",
+//       "blockClass": "shelfTitle"
+//     }
+//   },
+//   // "responsive-image#not-found-banner": {
+//   //   "title": "",
+//   //   "props": {
+//   //     "mobileSrc": "",
+//   //     "src": "",
+//   //     "alt": "",
+//   //     "title": "",
+//   //     "blockClass": ["orderplaced"]
+//   //   }
+//   // },
+//   "rich-text#not-found--recomendados": {
+//     "props": {
+//       "text": "Recomendados para ti",
+//       "blockClass": "shelfTitle"
+//     }
+//   },
+//   "flex-layout.row#not-found--recomendados": {
+//     "title": "Contenedor Carrusel mas vendidos",
+//     "children": ["flex-layout.col#not-found--recomendados"]
+//   },
+//   "flex-layout.col#not-found--recomendados": {
+//     "title": "Contenedor Carrusel mas vendidos",
+//     "children": ["rich-text#not-found--recomendados", "list-context.product-list#not-found--recomendados"]
+//   },
+//   "list-context.product-list#not-found--recomendados": {
+//     "blocks": ["product-summary.shelf"],
+//     "children": ["slider-layout#not-found"],
+//     "props": {
+//       "orderBy": "OrderByTopSaleDESC",
+//       "installmentCriteria": "MAX_WITH_INTEREST"
+//     }
+//   },
+//   "slider-layout#not-found": {
+//     "props": {
+//       "itemsPerPage": {
+//         "desktop": 4,
+//         "tablet": 3,
+//         "phone": 1
+//       },
+//       "infinite": true,
+//       "fullWidth": false,
+//       "blockClass": "shelf",
+//       "usePagination": true,
+//       "centerMode": {
+//         "desktop": "disabled",
+//         "mobile": "to-the-left"
+//       },
+//       "centerModeSlidesGap": 8,
+//       "showNavigationArrows": "desktopOnly",
+//       "showPaginationDots": "desktopOnly"
+//     }
+//   },
+
+//   // SUGERIDOS
+//   "rich-text#not-found--sugeridos": {
+//     "props": {
+//       "text": "Sugeridos",
+//       "blockClass": "shelfTitle"
+//     }
+//   },
+//   "flex-layout.row#not-found--sugeridos": {
+//     "title": "Contenedor Carrusel mas vendidos",
+//     "children": ["flex-layout.col#not-found--sugeridos"],
+//     "props": {
+//       "marginBottom": 10
+//     }
+//   },
+//   "flex-layout.col#not-found--sugeridos": {
+//     "title": "Contenedor Carrusel mas vendidos",
+//     "children": ["rich-text#not-found--sugeridos", "list-context.product-list#not-found--sugeridos"]
+//   },
+//   "list-context.product-list#not-found--sugeridos": {
+//     "blocks": ["product-summary.shelf"],
+//     "children": ["slider-layout#not-found"],
+//     "props": {
+//       "orderBy": "OrderByTopSaleDESC",
+//       "installmentCriteria": "MAX_WITH_INTEREST"
+//     }
+//   }
+
+//   // "flex-layout.row#NotFoundSearch": {
+//   //     "title": "Página no encontrada",
+//   //     "props": {
+//   //         "blockClass": "NotFoundSearch"
+//   //     },
+//   //     "children": [
+//   //         "flex-layout.col#NotFoundSearch01"
+//   //     ]
+//   // },
+//   // "flex-layout.col#NotFoundSearch01": {
+//   //     "props": {
+//   //         "preventVerticalStretch": true,
+//   //         "verticalAlign": "middle"
+//   //     },
+//   //     "children": [
+//   //         "rich-text#NotFoundSearch01",
+//   //         "rich-text#NotFoundSearch02",
+//   //         "rich-text#NotFoundSearch03"
+//   //     ]
+//   // },
+//   // "rich-text#NotFoundSearch01": {
+//   //     "props": {
+//   //         "blockClass": "NotFoundText",
+//   //         "textAlignment": "CENTER",
+//   //         "textPosition": "CENTER",
+//   //         "text": "**404: Error del servidor**"
+//   //     }
+//   // },
+//   // "rich-text#NotFoundSearch02": {
+//   //     "props": {
+//   //         "blockClass": "NotFoundTitle",
+//   //         "textAlignment": "CENTER",
+//   //         "textPosition": "CENTER",
+//   //         "text": "# Resultado no encontrado"
+//   //     }
+//   // },
+//   // "rich-text#NotFoundSearch03": {
+//   //     "props": {
+//   //         "blockClass": "NotFoundText",
+//   //         "textAlignment": "CENTER",
+//   //         "textPosition": "CENTER",
+//   //         "text": "**No hemos encontrado resultados relacionados a tu búsqueda, para regresar a la página de inicio, <a class='vtex-rich-text-0-x-go-to-home' href='/' >da click aquí.</a>**"
+//   //     }
+//   // }
+// }

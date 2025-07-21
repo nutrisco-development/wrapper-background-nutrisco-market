@@ -1,0 +1,26 @@
+.wrapper--stuck {
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.wrapper--stuck :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+.wrapper--stuck :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+.wrapper--stuck:not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+.wrapper--stuck:not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  background: transparent !important;
+}
+
+@supports (backdrop-filter: blur(5px)) {
+  .wrapper--stuck :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  .wrapper--stuck :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+  .wrapper--stuck:not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+  .wrapper--stuck:not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    background: transparent !important;
+  }
+}

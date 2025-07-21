@@ -1,0 +1,63 @@
+{
+  "store.custom#shipping-policy": {
+    "blocks": ["pattern-background-home", "flex-layout.row#shipping-policy-banner", "flex-layout.row#shipping-policy-title", "__fold__.experimentalLazyAssets", "flex-layout.row#shipping-policy-content"]
+  },
+  "flex-layout.row#shipping-policy-banner": {
+    "props": {
+      "blockClass": "banner-brand-logos",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#shipping-policy-banner"]
+  },
+  "list-context.image-list#shipping-policy-banner": {
+    "children": ["slider-layout#shipping-policy-banner"],
+    "props": {
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-4-DESKTOP.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-4-MOBILE.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#shipping-policy-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false
+    }
+  },
+  "flex-layout.row#shipping-policy-title": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"]
+    },
+    "children": ["rich-text#shipping-policy-title"]
+  },
+  "rich-text#shipping-policy-title": {
+    "props": {
+      "text": "# POLÍTICA DE ENVÍO \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#shipping-policy-content": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 4,
+      "colSizing": "auto",
+      "colGap": 8,
+      "preventVerticalStretch": true,
+      "blockClass": "StoreContainer"
+    },
+    "children": ["shipping-policy"]
+  }
+}

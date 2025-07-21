@@ -1,0 +1,61 @@
+{
+  "store.custom#contact-us-form": {
+    "blocks": ["pattern-background-home", "flex-layout.row#contact-us-form-banner", "flex-layout.row#contact-us-form-title", "__fold__.experimentalLazyAssets", "flex-layout.row#contact-us-form-content"]
+  },
+  "flex-layout.row#contact-us-form-banner": {
+    "props": {
+      "blockClass": "banner-brand-logos",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#contact-us-form-banner"]
+  },
+  "list-context.image-list#contact-us-form-banner": {
+    "children": ["slider-layout#contact-us-form-banner"],
+    "props": {
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "https://mercadodetodos.vtexassets.com/arquivos/BANNER-MARCAS-EMDT-MARZO-DESKTOPV2.jpg",
+          "mobileImage": "https://mercadodetodos.vtexassets.com/arquivos/BANNER-MARCAS-EMDT-MARZO-MOBILEV2.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#contact-us-form-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false
+    }
+  },
+  "flex-layout.row#contact-us-form-title": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"]
+    },
+    "children": ["rich-text#contact-us-form-title"]
+  },
+  "rich-text#contact-us-form-title": {
+    "props": {
+      "text": "# CONTÁCTANOS \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#contact-us-form-content": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 4,
+      "horizontalAlign": "center",
+      "blockClass": "StoreContainer"
+    },
+    "children": ["contact-form"]
+  }
+}

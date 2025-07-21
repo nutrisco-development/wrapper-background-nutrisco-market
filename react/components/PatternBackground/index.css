@@ -1,0 +1,150 @@
+:global(.render-route-store-custom-page-brand-ox) .backgroundCarnesOx {
+  background-color: #000000;
+  background-color: #151515;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+:global(.render-route-store-custom-page-brand-ox) .backgroundCarnesOx::before {
+  background-position: center;
+  background-size: 25%;
+  background-image: url(https://orizonb2ccl.vtexassets.com/arquivos/patro-testing2.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  content: '';
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -10;
+  background-repeat: repeat;
+}
+
+@media (max-width: 640px) {
+  :global(.render-route-store-custom-page-brand-ox) .backgroundCarnesOx::before {
+    background-size: 180%;
+  }
+}
+
+:global(.render-route-store-custom-page-pets) .backgroundPets {
+  background-color: #fff !important;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+:global(.render-route-store-custom-page-pets) .backgroundPets::before {
+  background-position: center;
+  background-size: 50%;
+  background-image: url(https://orizonb2ccl.vteximg.com.br/arquivos/PATTERN-PETS-PLP-LMTD-2022.svg);
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  content: '';
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: -10;
+}
+
+@media (max-width: 640px) {
+  :global(.render-route-store-custom-page-pets) .backgroundPets::before {
+    background-size: 180%;
+  }
+}
+
+/**/
+
+:global(.render-route-store-custom-page-brand-gentil2) .backgroundGentil {
+  background-color: #f1eded;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+:global(.render-route-store-custom-page-brand-gentil2) .backgroundGentil::before {
+  background-position: center;
+  background-size: 20%;
+  background-image: url(https://i.imgur.com/029Wj5T.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  content: '';
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: -10;
+  background-repeat: repeat;
+}
+
+@media (max-width: 640px) {
+  :global(.render-route-store-custom-page-brand-gentil2) .backgroundGentil::before {
+    background-size: 180%;
+  }
+}
+
+/**/
+:global(.render-route-store-custom-page-brand-apache) .backgroundApache {
+  /* background-color: #fefefe; */
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+:global(.render-route-store-custom-page-brand-apache) .backgroundApache::before {
+  background-position: center;
+  background-size: 40%;
+  background-image: url('https://orizonb2ccl.vteximg.com.br/arquivos/patron-apache-landing.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  content: '';
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -10;
+  background-repeat: repeat;
+}
+
+@media (max-width: 640px) {
+  :global(.render-route-store-custom-page-brand-apache) .backgroundApache::before {
+    background-size: 180%;
+  }
+}
+
+/**/
+
+:global(.render-route-store-custom-page-cyber) .backgroundCyber {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+:global(.render-route-store-custom-page-cyber) .backgroundCyber::before {
+  background-position: center;
+  background-size: 50%;
+  background-image: url(https://orizonb2ccl.vteximg.com.br/arquivos/PATTERNCYBERv1.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  content: '';
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -10;
+  background-repeat: repeat;
+}
+
+@media (max-width: 640px) {
+  :global(.render-route-store-custom-page-cyber) .backgroundCyber::before {
+    background-size: 80%;
+  }
+}

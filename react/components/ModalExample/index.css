@@ -1,0 +1,14 @@
+.selectRegion :global(.vtex-dropdown .h-100 .vtex-dropdown__container .o-0) {
+  font-family: TT Hoves, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.btnSaveAddress :global(.c-on-action-primary) {
+  background-color: #009eb1;
+  border-color: #009eb1;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: TT Hoves, Helvetica, sans-serif;
+}

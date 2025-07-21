@@ -1,0 +1,194 @@
+{
+  "store.custom#page-black-friday": {
+    "blocks": [
+      "responsive-layout.desktop#page-black-friday",
+      "responsive-layout.tablet#page-black-friday",
+      "responsive-layout.phone#page-black-friday",
+      "search-result-layout.customQuery#page-black-friday-desktop",
+      "pattern-background-home"
+    ]
+  },
+  "responsive-layout.desktop#page-black-friday": {
+    "children": ["flex-layout.row#page-black-friday-banner", "flex-layout.row#banner-slider-black-friday"]
+  },
+  "responsive-layout.tablet#page-black-friday": {
+    "children": [
+      "flex-layout.row#page-black-friday-banner",
+      "flex-layout.row#headline-banner-carousel-black-friday",
+      "flex-layout.row#carousel-banner-black-friday-desk"
+    ]
+  },
+  "responsive-layout.phone#page-black-friday": {
+    "children": [
+      "flex-layout.row#page-black-friday-banner",
+      "flex-layout.row#headline-banner-carousel-black-friday",
+      "flex-layout.row#carousel-banner-black-friday-desk"
+    ]
+  },
+  "search-result-layout.customQuery#page-black-friday-desktop": {
+    "props": {
+      "preventRouteChange": true,
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        //"hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "246",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-black-friday", "search-result-layout.mobile#page-black-friday", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-black-friday": {
+    "children": ["flex-layout.row#search-title-custom-black-friday", "flex-layout.row#searchbread", "flex-layout.row#result"],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile#page-black-friday": {
+    "children": [
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  /////
+  "flex-layout.row#page-black-friday-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-black-friday-banner1"]
+  },
+  "list-context.image-list#page-black-friday-banner1": {
+    "children": ["slider-layout#page-black-friday-banner1"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/BLACK-FRIDAY-2023-NOV-BANNER-DESK.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/BLACK-FRIDAY-2023-NOV-BANNER-TABLETv2.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-black-friday-banner1": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  ///
+  "flex-layout.row#banner-slider-black-friday": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer"],
+      "paddingTop": 6
+    },
+    "children": ["flex-layout.col#image-slide-black-friday", "flex-layout.col#carrusel-slide-black-friday"]
+  },
+
+  "flex-layout.col#image-slide-black-friday": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["image#image-slide-black-friday2"]
+  },
+
+  "image#image-slide-black-friday2": {
+    "props": {
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/BLACK-FRIDAY-2023-NOV-COVER.jpg",
+      "maxHeight": "430px"
+    }
+  },
+
+  "flex-layout.col#carrusel-slide-black-friday": {
+    "props": {
+      "width": "70%",
+      "blockClass": "BannerCarruselCustomCol2"
+    },
+    "children": ["flex-layout.row#carousel-banner-black-friday-desk"]
+  },
+  ////
+  "flex-layout.row#headline-banner-carousel-black-friday": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#headline-banner-carousel-black-friday"]
+  },
+
+  "rich-text#headline-banner-carousel-black-friday": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "# black-friday OFICIAL LA MESA DE TODOS | TODOS LOS PRODUCTOS",
+      "blockClass": "HeadlineBannerCarousel"
+    }
+  },
+  "flex-layout.row#carousel-banner-black-friday-desk": {
+    "children": ["list-context.product-list#carousel-banner-black-friday-desk"]
+  },
+  "list-context.product-list#carousel-banner-black-friday-desk": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carousel-banner-black-friday-desk"],
+    "props": {
+      //"collection": "224",
+      // "orderBy": "OrderByTopSaleDESC",
+      "category": "142/146",
+      //"hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByTopSaleDESC",
+      "specificationFilters": [],
+      "skusFilter": "ALL_AVAILABLE"
+    }
+  },
+  "slider-layout#carousel-banner-black-friday-desk": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#search-title-custom-black-friday": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#headline-banner-carousel-black-friday"]
+  }
+}

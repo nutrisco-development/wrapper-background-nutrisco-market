@@ -1,0 +1,36 @@
+.newsletterForm {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  grid-template-rows: 1fr;
+}
+.nameInputContainer--newsletter-name :global(.vtex-input-prefix__group) {
+  outline: none;
+  border: none;
+}
+.emailInputContainer--newsletter-email :global(.vtex-input-prefix__group) {
+  outline: none;
+  border: none;
+}
+.nameInputContainer--newsletter-name :global(.vtex-styleguide-9-x-input) {
+  border-radius: 0.5rem;
+}
+.emailInputContainer--newsletter-email :global(.vtex-styleguide-9-x-input) {
+  border-radius: 0.5rem;
+}
+@media (max-width: 40em) {
+  .newsletterForm {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-rows: 1fr;
+    width: 95% !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .formSubmitContainer--newsletter-submit :global(.vtex-button) {
+    width: 100%;
+  }
+}

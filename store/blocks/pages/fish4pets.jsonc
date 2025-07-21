@@ -1,0 +1,193 @@
+{
+  "store.custom#page-fish4pets": {
+    "blocks": [
+      "responsive-layout.desktop#page-fish4pets",
+      "responsive-layout.tablet#page-fish4pets",
+      "responsive-layout.phone#page-fish4pets",
+      "search-result-layout.customQuery#page-fish4pets-desktop"
+    ]
+  },
+  "responsive-layout.desktop#page-fish4pets": {
+    // "children": ["flex-layout.row#page-fish4pets-banner", "flex-layout.row#banner-slider-fish4pets"]
+  },
+  "responsive-layout.tablet#page-fish4pets": {
+    "children": [
+      // "flex-layout.row#page-fish4pets-banner",
+      // "flex-layout.row#headline-banner-carousel-fish4pets",
+      // "flex-layout.row#carousel-banner-fish4pets-desk"
+    ]
+  },
+  "responsive-layout.phone#page-fish4pets": {
+    "children": [
+      // "flex-layout.row#page-fish4pets-banner",
+      // "flex-layout.row#headline-banner-carousel-fish4pets",
+      // "flex-layout.row#carousel-banner-fish4pets-desk"
+    ]
+  },
+  "search-result-layout.customQuery#page-fish4pets-desktop": {
+    "props": {
+      "preventRouteChange": true,
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        // "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "293",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-fish4pets", "search-result-layout.mobile#page-fish4pets", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-fish4pets": {
+    "children": ["flex-layout.row#search-title-custom-fish4pets", "flex-layout.row#searchbread", "flex-layout.row#result"],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile#page-fish4pets": {
+    "children": [
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  /////
+  "flex-layout.row#page-fish4pets-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-fish4pets-banner1"]
+  },
+  "list-context.image-list#page-fish4pets-banner1": {
+    "children": ["slider-layout#page-fish4pets-banner1"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1920x200/00000/FFFFFF/%20C/O%20https://placeholder.com/?text=Banner",
+          "mobileImage": "https://via.placeholder.com/1025x350/00000/FFFFFF/%20C/O%20https://placeholder.com/?text=Banner"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-fish4pets-banner1": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  ///
+  "flex-layout.row#banner-slider-fish4pets": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer"],
+      "paddingTop": 6
+    },
+    "children": ["flex-layout.col#image-slide-fish4pets", "flex-layout.col#carrusel-slide-fish4pets"]
+  },
+
+  "flex-layout.col#image-slide-fish4pets": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["image#image-slide-fish4pets1"]
+  },
+
+  "image#image-slide-fish4pets1": {
+    "props": {
+      "src": "https://via.placeholder.com/430x430/000000/FFFFFF/%20C/O%20https://placeholder.com/?text=Cover",
+      "maxHeight": "430px"
+    }
+  },
+
+  "flex-layout.col#carrusel-slide-fish4pets": {
+    "props": {
+      "width": "70%",
+      "blockClass": "BannerCarruselCustomCol2"
+    },
+    "children": ["flex-layout.row#carousel-banner-fish4pets-desk"]
+  },
+  ////
+  "flex-layout.row#headline-banner-carousel-fish4pets": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#headline-banner-carousel-fish4pets"]
+  },
+
+  "rich-text#headline-banner-carousel-fish4pets": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Revisa todas nuestras ofertas",
+      "blockClass": "HeadlineBannerCarousel"
+    }
+  },
+
+  "flex-layout.row#carousel-banner-fish4pets-desk": {
+    "children": ["list-context.product-list#carousel-banner-fish4pets-desk"]
+  },
+  "list-context.product-list#carousel-banner-fish4pets-desk": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carousel-banner-fish4pets-desk"],
+    "props": {
+      "collection": "293",
+      // "orderBy": "OrderByTopSaleDESC",
+      //"category": "142/146",
+      // "hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByTopSaleDESC",
+      "specificationFilters": [],
+      "skusFilter": "ALL_AVAILABLE"
+    }
+  },
+  "slider-layout#carousel-banner-fish4pets-desk": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#search-title-custom-fish4pets": {
+    "props": {
+      "blockClass": ["StoreContainer", "DynamicTitleCustom"]
+    },
+    "children": ["search-title.v2"]
+  }
+}

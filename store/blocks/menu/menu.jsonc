@@ -1,0 +1,1211 @@
+{
+  "vtex.menu@2.x:menu#topleft": {
+    "props": {
+      "blockClass": "top-left-header-items"
+    },
+    "children": ["menu-item#top-left-1", "menu-item#top-left-2"]
+  },
+  "vtex.menu@2.x:menu#topright": {
+    "props": {
+      "blockClass": "top-right-header-items"
+    },
+    "children": ["menu-item#top-right-2", "menu-item#top-right-3", "menu-item#top-right-4"]
+  },
+  "vtex.menu@2.x:menu#mainheader": {
+    "children": ["menu-item#main-header-01", "menu-item#main-header-02", "menu-item#main-header-03", "menu-item#main-header-04", "menu-item#main-header-05", "menu-item#main-header-06", "menu-item#main-header-07", "menu-item#main-header-08"]
+  },
+  //// CONGELADOS
+  "menu-item#main-header-01": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 142,
+        "text": "Congelados"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#congelados"]
+  },
+  "vtex.menu@2.x:submenu#congelados": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-congelado"]
+  },
+  "vtex.menu@2.x:menu#category-congelado": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-congelado-01", "menu-item#item-congelado-02", "menu-item#item-congelado-03", "menu-item#item-congelado-04", "menu-item#item-congelado-05", "menu-item#item-congelado-06"]
+  },
+  "menu-item#item-congelado-01": {
+    "props": {
+      "id": "item-congelado-01",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 144,
+        "text": "Carnes"
+      }
+    }
+  },
+  "menu-item#item-congelado-02": {
+    "props": {
+      "id": "item-congelado-02",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 145,
+        "text": "Frutas y Verduras"
+      }
+    }
+  },
+  "menu-item#item-congelado-03": {
+    "props": {
+      "id": "item-congelado-03",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 146,
+        "text": "Helados"
+      }
+    }
+  },
+  "menu-item#item-congelado-04": {
+    "props": {
+      "id": "item-congelado-04",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 147,
+        "text": "Mariscos"
+      }
+    }
+  },
+  "menu-item#item-congelado-05": {
+    "props": {
+      "id": "item-congelado-04",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 148,
+        "text": "Pescados"
+      }
+    }
+  },
+  "menu-item#item-congelado-06": {
+    "props": {
+      "id": "item-congelado-06",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 151,
+        "text": "Platos Preparados"
+      }
+    }
+  },
+  //// CONSERVAS
+  "menu-item#main-header-02": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 137,
+        "text": "Conservas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#conserva"]
+  },
+  "vtex.menu@2.x:submenu#conserva": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-conserva"]
+  },
+  "vtex.menu@2.x:menu#category-conserva": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-conserva-01", "menu-item#item-conserva-02", "menu-item#item-conserva-03", "menu-item#item-conserva-04"]
+  },
+  "menu-item#item-conserva-01": {
+    "props": {
+      "id": "item-conserva-01",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 139,
+        "text": "Mariscos"
+      }
+    }
+  },
+  "menu-item#item-conserva-02": {
+    "props": {
+      "id": "item-conserva-02",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 138,
+        "text": "Pescados"
+      }
+    }
+  },
+  "menu-item#item-conserva-03": {
+    "props": {
+      "id": "item-conserva-03",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 141,
+        "text": "Premium"
+      }
+    }
+  },
+  "menu-item#item-conserva-04": {
+    "props": {
+      "id": "item-conserva-04",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 140,
+        "text": "Sopas"
+      }
+    }
+  },
+  //// ABARROTES
+  "menu-item#main-header-03": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 143,
+
+        "text": "Abarrotes"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#abarrote"]
+  },
+  "vtex.menu@2.x:submenu#abarrote": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-abarrote"]
+  },
+  "vtex.menu@2.x:menu#category-abarrote": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-abarrote-01", "menu-item#item-abarrote-02", "menu-item#item-abarrote-03", "menu-item#item-abarrote-04", "menu-item#item-abarrote-05", "menu-item#item-abarrote-06"]
+  },
+  "menu-item#item-abarrote-01": {
+    "props": {
+      "id": "item-abarrote-01",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 152,
+        "text": " Aceites y Aliños"
+      }
+    }
+  },
+  "menu-item#item-abarrote-02": {
+    "props": {
+      "id": "item-abarrote-02",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 153,
+        "text": "Arroz y Legumbres"
+      }
+    }
+  },
+  "menu-item#item-abarrote-03": {
+    "props": {
+      "id": "item-abarrote-03",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 157,
+        "text": "Desayunos y Dulces"
+      }
+    }
+  },
+  "menu-item#item-abarrote-04": {
+    "props": {
+      "id": "item-abarrote-04",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 155,
+        "text": "Harinas Y Premezclas"
+      }
+    }
+  },
+  "menu-item#item-abarrote-05": {
+    "props": {
+      "id": "item-abarrote-05",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 154,
+        "text": "Pastas y Salsas"
+      }
+    }
+  },
+  "menu-item#item-abarrote-06": {
+    "props": {
+      "id": "item-abarrote-06",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 156,
+        "text": "Snack y Coctel"
+      }
+    }
+  },
+  //// LÁCTEOS
+  "menu-item#main-header-04": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 158,
+
+        "text": "Lácteos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-lacteo"]
+  },
+  "vtex.menu@2.x:submenu#category-lacteo": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-lacteo"]
+  },
+  "vtex.menu@2.x:menu#category-lacteo": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-lacteo-01", "menu-item#item-lacteo-02", "menu-item#item-lacteo-03"]
+  },
+  "menu-item#item-lacteo-01": {
+    "props": {
+      "id": "item-lacteo-01",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 159,
+        "text": "Crema"
+      }
+    }
+  },
+  "menu-item#item-lacteo-02": {
+    "props": {
+      "id": "item-lacteo-02",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 160,
+        "text": "Leche"
+      }
+    }
+  },
+  "menu-item#item-lacteo-03": {
+    "props": {
+      "id": "item-lacteo-03",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 161,
+        "text": "Quesos"
+      }
+    }
+  },
+  //// BEBESTIBLES
+  "menu-item#main-header-05": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 162,
+
+        "text": "Bebestibles"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-bebestible"]
+  },
+  "vtex.menu@2.x:submenu#category-bebestible": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-bebestible"]
+  },
+  "vtex.menu@2.x:menu#category-bebestible": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-bebestible-01", "menu-item#item-bebestible-02", "menu-item#item-bebestible-03", "menu-item#item-bebestible-04", "menu-item#item-bebestible-05"]
+  },
+  "menu-item#item-bebestible-01": {
+    "props": {
+      "id": "item-bebestible-01",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 159,
+        "text": "Agua"
+      }
+    }
+  },
+  "menu-item#item-bebestible-02": {
+    "props": {
+      "id": "item-bebestible-02",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 159,
+        "text": "Batidos"
+      }
+    }
+  },
+  "menu-item#item-bebestible-03": {
+    "props": {
+      "id": "item-bebestible-03",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 159,
+        "text": "Jugos"
+      }
+    }
+  },
+  "menu-item#item-bebestible-04": {
+    "props": {
+      "id": "item-bebestible-04",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 159,
+        "text": "Kombucha"
+      }
+    }
+  },
+  "menu-item#item-bebestible-05": {
+    "props": {
+      "id": "item-bebestible-05",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 159,
+        "text": " Smoothie"
+      }
+    }
+  },
+  //// NUTRACÉUTICOS
+  "menu-item#main-header-06": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 168,
+        "text": "Nutracéuticos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-nutraceutico"]
+  },
+  "vtex.menu@2.x:submenu#category-nutraceutico": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-nutraceutico"]
+  },
+  "vtex.menu@2.x:menu#category-nutraceutico": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-nutraceutico-01"]
+  },
+  "menu-item#item-nutraceutico-01": {
+    "props": {
+      "id": "item-bebestible-05",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 170,
+        "text": "Cápsulas"
+      }
+    }
+  },
+  //// MARCAS
+  "menu-item#main-header-07": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/empresa/marcas",
+        "tagTitle": "marcas",
+        "text": "marcas"
+      }
+    }
+  },
+  //// PACKS
+  "menu-item#main-header-08": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/packs",
+        "tagTitle": "packs",
+        "text": "packs"
+      }
+    }
+  },
+  ///
+  "menu#drawer-mobile": {
+    "children": ["menu-item#main-header-01", "menu-item#main-header-02", "menu-item#main-header-03", "menu-item#main-header-04", "menu-item#main-header-05", "menu-item#main-header-06", "menu-item#main-header-07", "menu-item#main-header-08"],
+    "props": {
+      "type": "line",
+      "orientation": "vertical"
+    }
+  },
+  ///
+  "menu-item#top-left-1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.lamesadetodos.cl/",
+        "tagTitle": "la mesa de todos",
+        "text": "la mesa de todos"
+      }
+    }
+  },
+  "menu-item#top-left-2": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/empresa/contacto",
+        "tagTitle": "contacto",
+        "text": "contacto"
+      }
+    }
+  },
+  "menu-item#top-right-1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ayuda",
+        "tagTitle": "",
+        "text": ""
+      }
+    }
+  },
+  "menu-item#top-right-2": {
+    "props": {
+      "blockClass": "zona-despacho",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "zona de despacho",
+        "text": "zona de despacho"
+      }
+    }
+  },
+  "menu-item#top-right-3": {
+    "props": {
+      "blockClass": "icon-rrss",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#"
+        //"tagTitle": "rrss",
+        //"text": "rrss"
+      },
+      "iconProps": {
+        "id": "icon-facebook-tabler",
+        "size": 20,
+        "viewBox": "0 0 24 24"
+        //"activeClassName": "rebel-pink",
+        //"mutedClassName": "c-action-primary"
+      }
+      //"iconToTheRight": true
+    }
+  },
+  "menu-item#top-right-4": {
+    "props": {
+      "blockClass": "icon-rrss",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#"
+        //"tagTitle": "rrss",
+        //"text": "rrss"
+      },
+      "iconProps": {
+        "id": "icon-instagram-tablet",
+        "size": 20,
+        "viewBox": "0 0 24 24"
+        //"activeClassName": "rebel-pink",
+        //"mutedClassName": "c-action-primary"
+      }
+      //"iconToTheRight": true
+    }
+  },
+  "menu-item#main-header-1": {
+    "props": {
+      "blockClass": "main-header-item",
+      //"type": "custom",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        // "type": "internal",
+        // "href": "#",
+        // "tagTitle": "congelados",
+        "text": "congelados"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-frozen"]
+
+    // "menu-item#5": {
+    //   "props": {
+    //     "type": "category",
+    //     "highlight": false,
+    //     "itemProps": {
+    //       "categoryId": 1
+    //     }
+    //   }
+    // },
+  },
+  "vtex.menu@2.x:submenu#category-frozen": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-frozen"]
+  },
+  "vtex.menu@2.x:menu#category-frozen": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-frozen-protein",
+      "menu-item#category-frozen-vegetables",
+      "menu-item#category-frozen-ice-creams",
+      "menu-item#category-frozen-seafood",
+      //"menu-item#category-frozen-bread",
+      "menu-item#category-frozen-fish",
+      "menu-item#category-frozen-prepared-meals",
+      "menu-item#category-frozen-pasta"
+    ]
+  },
+  "menu-item#category-frozen-protein": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 56,
+        "text": "Carnes, Pollos y Pavo"
+      }
+    }
+  },
+  "menu-item#category-frozen-vegetables": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 108,
+        "text": "Frutas y Verduras"
+      }
+    }
+  },
+  "menu-item#category-frozen-ice-creams": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 16,
+        "text": "Helados"
+      }
+    }
+  },
+  "menu-item#category-frozen-seafood": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 11,
+        "text": "Mariscos"
+      }
+    }
+  },
+  "menu-item#category-frozen-fish": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 12,
+        "text": "Pescados"
+      }
+    }
+  },
+  "menu-item#category-frozen-bread": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 53,
+        "text": "Pan"
+      }
+    }
+  },
+  "menu-item#category-frozen-prepared-meals": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 40,
+        "text": "Platos Preparados"
+      }
+    }
+  },
+  "menu-item#category-frozen-pasta": {
+    "props": {
+      "id": "category-frozen-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 52,
+        "text": "Pastas"
+      }
+    }
+  },
+  "menu-item#main-header-2": {
+    "props": {
+      "type": "category",
+      "blockClass": "main-header-item",
+      //"type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 124,
+        // "type": "internal",
+        // "href": "#",
+        // "tagTitle": "conservas",
+        "text": "conservas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-preserves"]
+  },
+  "vtex.menu@2.x:submenu#category-preserves": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-preserves"]
+  },
+  "vtex.menu@2.x:menu#category-preserves": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#category-preserves-protein", "menu-item#category-preserves-fish"]
+  },
+  "menu-item#category-preserves-protein": {
+    "props": {
+      "id": "category-preserves-protein",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 14,
+        "text": "Mariscos"
+      }
+    }
+  },
+  "menu-item#category-preserves-fish": {
+    "props": {
+      "id": "category-preserves-fish",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 15,
+        "text": "Pescados"
+      }
+    }
+  },
+  "menu-item#main-header-3": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        // "href": "/171?map=productClusterIds&order=OrderByPriceASC",
+        "href": "/171?map=productClusterIds",
+        "tagTitle": "supermercado",
+        "text": "supermercado"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-supermarket"]
+  },
+  "vtex.menu@2.x:submenu#category-supermarket": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-supermarket"]
+  },
+  "vtex.menu@2.x:menu#category-supermarket": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-supermarket-beverages",
+      //"menu-item#category-supermarket-breakfast-sweet",
+      "menu-item#category-supermarket-pantry",
+      "menu-item#category-supermarket-fresh-dairy",
+      //"menu-item#category-supermarket-nutraceutical",
+      "menu-item#category-supermarket-snack-cocktail"
+    ]
+  },
+  "menu-item#category-supermarket-beverages": {
+    "props": {
+      "id": "category-supermarket-beverages",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 31,
+        "text": "Bebidas"
+      }
+    }
+  },
+  "menu-item#category-supermarket-breakfast-sweet": {
+    "props": {
+      "id": "category-supermarket-breakfast-sweet",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 38,
+        "text": "Desayuno y Dulces"
+      }
+    }
+  },
+  "menu-item#category-supermarket-pantry": {
+    "props": {
+      "id": "category-supermarket-pantry",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 25,
+        "text": "Despensa"
+      }
+    }
+  },
+  "menu-item#category-supermarket-fresh-dairy": {
+    "props": {
+      "id": "category-supermarket-fresh-dairy",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 72,
+        "text": "Frescos y Lácteos"
+      }
+    }
+  },
+  "menu-item#category-supermarket-nutraceutical": {
+    "props": {
+      "id": "category-supermarket-fresh-dairy",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 35,
+        "text": "Nutracéuticos"
+      }
+    }
+  },
+  "menu-item#category-supermarket-snack-cocktail": {
+    "props": {
+      "id": "category-supermarket-fresh-dairy",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 41,
+        "text": "Snacks y Coctel"
+      }
+    }
+  },
+  "menu-item#main-header-4": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/empresa/marcas",
+        "tagTitle": "marcas",
+        "text": "marcas"
+      }
+    }
+  },
+  "menu-item#main-header-5": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "packs",
+        "text": "packs"
+      }
+    }
+  },
+  "menu-item#main-header-6": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/141?map=productClusterIds",
+        "tagTitle": "ofertas",
+        "text": "ofertas"
+      }
+    }
+  },
+  /* items menu mobile */
+  "menu-item#main-header-mobile-7": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 84,
+        "text": "Abarrotes"
+      }
+    }
+  },
+  "menu-item#main-header-mobile-8": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 99,
+        "text": "Bebestibles"
+      }
+    }
+  },
+  "menu-item#main-header-mobile-11": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 99,
+        "text": "Bebestible"
+      }
+    }
+  },
+  "menu-item#main-header-mobile-9": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 107,
+        "text": "Congelado"
+      }
+    }
+  },
+  "menu-item#main-header-mobile-10": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 124,
+        "text": "Conserva"
+      }
+    }
+  },
+  //
+  "menu-item#main-header-7": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 84,
+        // "type": "internal",
+        // "tagTitle": "abarrotes",
+        "text": "Abarrotes"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-groceries"]
+  },
+  "vtex.menu@2.x:submenu#category-groceries": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-groceries"]
+  },
+  "vtex.menu@2.x:menu#category-groceries": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-groceries1", "menu-item#item-groceries2", "menu-item#item-groceries3", "menu-item#item-groceries4"]
+  },
+  "menu-item#item-groceries1": {
+    "props": {
+      "id": "item-groceries1",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 85,
+        "text": "Arroz y Legumbre"
+      }
+    }
+  },
+  "menu-item#item-groceries2": {
+    "props": {
+      "id": "item-groceries2",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 86,
+        "text": "Harinas y Premezclas"
+      }
+    }
+  },
+  "menu-item#item-groceries3": {
+    "props": {
+      "id": "item-groceries3",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 87,
+        "text": "Pastas y Salsas"
+      }
+    }
+  },
+  "menu-item#item-groceries4": {
+    "props": {
+      "id": "item-groceries4",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 88,
+        "text": "Snack y Coctel"
+      }
+    }
+  },
+  "menu-item#item-groceries5": {
+    "props": {
+      "id": "item-groceries5",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 88,
+        "text": "Snack y Coctel"
+      }
+    }
+  },
+  //
+  //
+  //
+  "menu-item#main-header-8": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 99,
+        "text": "Bebestibles"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-beverages"]
+  },
+  "vtex.menu@2.x:submenu#category-beverages": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-beverages"]
+  },
+  "vtex.menu@2.x:menu#category-beverages": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-beverages1", "menu-item#item-beverages2", "menu-item#item-beverages3"]
+  },
+  "menu-item#item-beverages1": {
+    "props": {
+      "id": "item-beverages1",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 100,
+        "text": "Batidos"
+      }
+    }
+  },
+  "menu-item#item-beverages2": {
+    "props": {
+      "id": "item-beverages2",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 101,
+        "text": "Jugo"
+      }
+    }
+  },
+  "menu-item#item-beverages3": {
+    "props": {
+      "id": "item-beverages3",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 102,
+        "text": " Smothie"
+      }
+    }
+  },
+  //
+  "menu-item#main-header-9": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 107,
+        "text": "Congelados"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-frozen2"]
+  },
+  "vtex.menu@2.x:submenu#category-frozen2": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-frozen2"]
+  },
+  "vtex.menu@2.x:menu#category-frozen2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-frozen-1", "menu-item#item-frozen-2", "menu-item#item-frozen-3", "menu-item#item-frozen-4"]
+  },
+  "menu-item#item-frozen-1": {
+    "props": {
+      "id": "item-frozen1",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 108,
+        "text": "Frutas y Verduras"
+      }
+    }
+  },
+  "menu-item#item-frozen-2": {
+    "props": {
+      "id": "item-frozen2",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 109,
+        "text": "Helado"
+      }
+    }
+  },
+  "menu-item#item-frozen-3": {
+    "props": {
+      "id": "item-frozen3",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 110,
+        "text": "Mariscos"
+      }
+    }
+  },
+  "menu-item#item-frozen-4": {
+    "props": {
+      "id": "item-frozen4",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 111,
+        "text": "Pescados"
+      }
+    }
+  },
+  //
+  "menu-item#main-header-10": {
+    "props": {
+      "blockClass": "main-header-item",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 124,
+        "text": "Conservas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-preserves2"]
+  },
+  "vtex.menu@2.x:submenu#category-preserves2": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-preserves2"]
+  },
+  "vtex.menu@2.x:menu#category-preserves2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#item-preserves-1", "menu-item#item-preserves-2"]
+  },
+  "menu-item#item-preserves-1": {
+    "props": {
+      "id": "item-preserves-1",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 125,
+        "text": "Mariscos"
+      }
+    }
+  },
+  "menu-item#item-preserves-2": {
+    "props": {
+      "id": "item-preserves-2",
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 126,
+        "text": "Pescados"
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+/*
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+*/
+
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+.footerLayout {
+  background-color: #1b3747;
+}
+
+.footerLayout :global(.vtex-store-components-3-x-logoLink) {
+  width: auto;
+  padding: 1rem;
+}
+
+.socialNetworkLink {
+  width: 21px;
+  height: 21px;
+}
+
+.row--menu-row {
+  padding-right: 24px;
+  background-color: red;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+.footerLayout {
+  width: 100%;
+  background-color: #ffffff;
+}
+@media (min-width: 64.125em) {
+  .footerLayout {
+    width: 100%;
+    background-color: #ffffff;
+  }
+}
+
+.footerLayout :global(.vtex-rich-text-0-x-wrapper--item-text-title) {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 0px red;
+}
+.footerLayout :global(.vtex-rich-text-0-x-wrapper--item-text) {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footerLayout :global(.vtex-rich-text-0-x-link--item-email) {
+  color: #000;
+  font-weight: 700;
+}
+
+.socialNetworksContainer {
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footerLayout :global(.vtex-menu-2-x-menuContainer) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLayout {
+  background-color: unset;
+}
+
+/**/
+
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+.footerLayout {
+  background-color: #1b3747;
+}
+
+.footerLayout :global(.vtex-store-components-3-x-logoLink) {
+  width: auto;
+  padding: 1rem;
+}
+
+.socialNetworkLink {
+  width: 21px;
+  height: 21px;
+}
+
+.row--menu-row {
+  padding-right: 24px;
+  background-color: red;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+.footerLayout {
+  width: 100%;
+  background-color: #ffffff;
+}
+@media (min-width: 64.125em) {
+  .footerLayout {
+    width: 100%;
+    background-color: #ffffff;
+  }
+}
+
+.footerLayout :global(.vtex-rich-text-0-x-wrapper--item-text-title) {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 0px red;
+}
+.footerLayout :global(.vtex-rich-text-0-x-wrapper--item-text) {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footerLayout :global(.vtex-rich-text-0-x-link--item-email) {
+  color: #000;
+  font-weight: 700;
+}
+
+.socialNetworksContainer {
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footerLayout :global(.vtex-menu-2-x-menuContainer) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLayout {
+  background-color: unset;
+}

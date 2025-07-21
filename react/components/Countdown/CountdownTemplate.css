@@ -1,0 +1,346 @@
+.BannerTimerContainer {
+  /* margin: 40px 0 32px; */
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.BannerTimerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 0 16px 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  margin-block-end: unset;
+  margin-block-start: unset;
+  margin-bottom: 0;
+  font-size: 1.875rem;
+  color: #009eb1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.BannerTimerCountImage {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 1.5rem;
+}
+
+.Right .BannerTimerCountImage {
+  padding: unset;
+  background-color: unset;
+}
+
+.BannerTimerLink {
+  position: relative;
+  width: 100%;
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.BannerTimerImage {
+  width: 100%;
+}
+
+.BannerTimerImage .lazy-image-wrap {
+  min-height: 200px;
+}
+
+.BannerTimerContainer.right .BannerTimerImage .lazy-image-wrap {
+  min-height: unset;
+}
+
+.Countdown {
+  position: absolute;
+  /* top: 50%; */
+  transform: translateY(50%);
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+  width: 100%;
+  margin: 0 auto;
+
+  grid-template-areas:
+    'header1 header1 header1 header1 header1'
+    'CountdownItem1 CountdownItem2 CountdownItem3 CountdownItem4 CountdownItem5'
+    'footer1 footer1 footer1 footer1 footer1';
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.CountdownWrapperHeading {
+  grid-area: header1;
+  background-color: #ffff;
+  padding: 0.25rem;
+  text-align: center;
+  color: #600042;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'TT Hoves';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  border-radius: 0.3125rem;
+}
+
+.CountdownWrapperFooter {
+  grid-area: footer1;
+  padding: 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'TT Hoves';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+}
+
+.CountdownItem0 {
+  grid-area: CountdownItem0;
+}
+
+.CountdownItem1 {
+  grid-area: CountdownItem1;
+}
+.CountdownItem2 {
+  grid-area: CountdownItem2;
+}
+.CountdownItem3 {
+  grid-area: CountdownItem3;
+}
+.CountdownItem4 {
+  grid-area: CountdownItem4;
+}
+.CountdownItem5 {
+  grid-area: CountdownItem5;
+}
+.CountdownWrapperFooter {
+  grid-area: footer1;
+}
+
+.CountdownWrapper {
+  background: #fff;
+  color: #000;
+}
+
+.CountdownTwoPoints {
+  color: #fff;
+}
+
+.CountdownWrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.3125rem 0.5rem;
+  min-width: 55px;
+  background: #fff;
+  color: #600042;
+  border-radius: 8px;
+}
+
+.CountdownImageCountdown {
+  border-radius: 0.625rem;
+}
+
+.CountdownDigit {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.CountdownLabel {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: normal;
+}
+
+.CountdownTwoPoints {
+  font-size: 2rem;
+  /*   margin: 0.25rem; */
+  font-weight: bold;
+  color: #fff;
+}
+
+/****************************************************** DESDE ACA RESPOSIVE*/
+@media (min-width: 1440px) {
+  .CountdownDigit {
+    font-size: 2rem;
+  }
+  .CountdownLabel {
+    font-size: 1rem;
+  }
+  .CountdownWrapper {
+    min-width: 60px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .CountdownDigit {
+    font-size: 1.2rem;
+  }
+  .CountdownLabel {
+    font-size: 0.75rem;
+  }
+  .CountdownWrapper {
+    min-width: 50px;
+  }
+}
+
+@media (min-width: 841px) {
+  .BannerTimerCountdown {
+    width: 23%;
+    top: 50%;
+    left: 0;
+    bottom: unset;
+    transform: translateY(-50%);
+    padding-bottom: 0;
+  }
+  .BannerTimerContainer.right .BannerTimerCountdown {
+    width: auto;
+    left: 81%;
+  }
+  .BannerTimerContainer .BannerTimerImage .lazy-image-wrap {
+    min-height: 117px;
+  }
+}
+
+@media (min-width: 841px) and (max-width: 1050px) {
+  .BannerTimerCountdown {
+    top: unset;
+    transform: translateY(-10px);
+  }
+  .CountdownWrapperHeading {
+    font-size: 0.625rem;
+  }
+  .CountdownWrapperFooter {
+    font-size: 0.625rem;
+  }
+
+  .CountdownDigit {
+    font-size: 0.625rem;
+  }
+  .CountdownLabel {
+    font-size: 0.5rem;
+  }
+  .CountdownWrapper {
+    min-width: 45px;
+  }
+  .Countdown {
+    gap: 1px;
+  }
+  .CountdownTwoPoints {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .Countdown {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .BannerTimerCountdown {
+    box-sizing: border-box;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    padding-bottom: 22vw;
+    transform: translateX(-50%);
+  }
+  .CountdownWrapperHeading {
+    display: none;
+  }
+  .CountdownWrapperFooter {
+    display: none;
+  }
+}
+@media (min-width: 760px) and (max-width: 840px) {
+  .CountdownDigit {
+    font-size: 1.8rem;
+  }
+  .CountdownLabel {
+    font-size: 1rem;
+  }
+  .CountdownWrapper {
+    min-width: 55px;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 840px) {
+  .CountdownDigit {
+    font-size: 1.65rem;
+  }
+  .CountdownLabel {
+    font-size: 1.25rem;
+  }
+  .CountdownWrapper {
+    min-width: 60px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 820px) {
+  .CountdownDigit {
+    font-size: 1.6rem;
+  }
+  .CountdownLabel {
+    font-size: 1.2rem;
+  }
+  .CountdownWrapper {
+    min-width: 60px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 720px) {
+  .CountdownDigit {
+    font-size: 1.4rem;
+  }
+  .CountdownLabel {
+    font-size: 1rem;
+  }
+  .CountdownWrapper {
+    min-width: 60px;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 620px) {
+  .CountdownDigit {
+    font-size: 1.2rem;
+  }
+  .CountdownLabel {
+    font-size: 0.875rem;
+  }
+  .CountdownWrapper {
+    min-width: 60px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 520px) {
+  .CountdownDigit {
+    font-size: 1rem;
+  }
+  .CountdownLabel {
+    font-size: 12px;
+  }
+  .CountdownWrapper {
+    min-width: 60px;
+  }
+}
+
+@media (max-width: 420px) {
+  .CountdownDigit {
+    font-size: 0.875rem;
+  }
+  .CountdownLabel {
+    font-size: 0.5rem;
+  }
+  .CountdownWrapper {
+    min-width: 45px;
+  }
+}

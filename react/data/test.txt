@@ -1,0 +1,51 @@
+// Interface for a state within a region
+interface State {
+  postalCode: string;
+  name: string;
+}
+
+// Interface for a region within a country
+interface Region {
+  id: number;
+  regionId: string;
+  name: string;
+  states: State[];
+}
+
+// Interface for a country (if extended to multiple countries)
+interface Country {
+  id: number;
+  regions: Region[];
+}
+
+// Example data structure
+export const countries: Country[] = [
+  {
+    id: 1,
+    regions: [
+      {
+        id: 1,
+        regionId: 'RM',
+        name: 'Región Metropolitana',
+        states: [
+          { postalCode: '9500000', name: 'Buin' },
+          { postalCode: '9560000', name: 'Calera de Tango' },
+          { postalCode: '9200000', name: 'Cerrillos' },
+          { postalCode: '9080000', name: 'Cerro Navia' },
+          { postalCode: '9340000', name: 'Colina' },
+          { postalCode: '8540000', name: 'Conchali' },
+          { postalCode: '8010000', name: 'El Bosque' },
+          { postalCode: '9810000', name: 'El Monte' },
+          { postalCode: '9160000', name: 'Estacion Central' },
+          { postalCode: '8580000', name: 'Huechuraba' },
+          { postalCode: '8380000', name: 'Independencia' },
+          { postalCode: '7970000', name: 'La Cisterna' },
+          { postalCode: '8240000', name: 'La Florida' },
+          { postalCode: '8820000', name: 'La Pintana' },
+          { postalCode: '7850000', name: 'La Reina' },
+        ],
+      },
+      // Additional regions can be added here if necessary
+    ],
+  },
+];

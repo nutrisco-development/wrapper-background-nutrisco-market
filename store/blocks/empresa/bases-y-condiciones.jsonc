@@ -1,0 +1,63 @@
+{
+  "store.custom#terms-conditions": {
+    "blocks": ["pattern-background-home", "flex-layout.row#terms-conditions-banner", "flex-layout.row#terms-conditions-title", "__fold__.experimentalLazyAssets", "flex-layout.row#terms-conditions-content"]
+  },
+  "flex-layout.row#terms-conditions-banner": {
+    "props": {
+      "blockClass": "banner-brand-logos",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#terms-conditions-banner"]
+  },
+  "list-context.image-list#terms-conditions-banner": {
+    "children": ["slider-layout#terms-conditions-banner"],
+    "props": {
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-2-DESKTOP.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-2-MOBILE.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#terms-conditions-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false
+    }
+  },
+  "flex-layout.row#terms-conditions-title": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"]
+    },
+    "children": ["rich-text#terms-conditions-title"]
+  },
+  "rich-text#terms-conditions-title": {
+    "props": {
+      "text": "# BASES Y CONDICIONES \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#terms-conditions-content": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 4,
+      "colSizing": "auto",
+      "colGap": 8,
+      "preventVerticalStretch": true,
+      "blockClass": "StoreContainer"
+    },
+    "children": ["terms-conditions"]
+  }
+}

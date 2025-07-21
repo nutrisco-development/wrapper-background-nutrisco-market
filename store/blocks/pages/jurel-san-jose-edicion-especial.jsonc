@@ -1,0 +1,118 @@
+{
+  "store.custom#page-san-jose-edicion-especial": {
+    "blocks": ["search-result-layout.customQuery#page-san-jose-edicion-especial"]
+  },
+  "search-result-layout.customQuery#page-san-jose-edicion-especial": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        //"hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "queryField": "214",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#page-san-jose-edicion-especial",
+      "search-result-layout.mobile#page-san-jose-edicion-especial",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#page-san-jose-edicion-especial": {
+    "children": [
+      "flex-layout.row#page-san-jose-edicion-especial-banner",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result"
+      //"flex-layout.row#page-san-jose-edicion-especial-video"
+    ],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+
+  "search-result-layout.mobile#page-san-jose-edicion-especial": {
+    "children": [
+      "flex-layout.row#page-san-jose-edicion-especial-banner",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+      //"flex-layout.row#page-san-jose-edicion-especial-video"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#page-san-jose-edicion-especial-video": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "paddingBottom": 10,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["video#background"]
+  },
+  "video#background": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=0P144w9xz1I",
+      "blockClass": "videoEl"
+    }
+  },
+  "flex-layout.row#page-san-jose-edicion-especial-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "paddingBottom": 10,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-san-jose-edicion-especial-banner"]
+  },
+  "list-context.image-list#page-san-jose-edicion-especial-banner": {
+    "children": ["slider-layout#page-san-jose-edicion-especial-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1920x200.png",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-JUREL-SAN-JOSE-EDICION-ESPECIAL-MOBILE.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-san-jose-edicion-especial-banner": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

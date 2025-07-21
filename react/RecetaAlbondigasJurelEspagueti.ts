@@ -1,0 +1,3 @@
+import RecetaAlbondigasJurelEspagueti from './components/RecipesContent/RecetaAlbondigasJurelEspagueti'
+
+export default RecetaAlbondigasJurelEspagueti

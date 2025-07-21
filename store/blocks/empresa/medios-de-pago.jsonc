@@ -1,0 +1,67 @@
+{
+  "store.custom#payment-methods": {
+    "blocks": [
+      "pattern-background-home",
+      "flex-layout.row#payment-methods-banner",
+      "flex-layout.row#payment-methods-title",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#payment-methods-content"
+    ]
+  },
+  "flex-layout.row#payment-methods-banner": {
+    "props": {
+      "blockClass": "banner-brand-logos",
+      "fullWidth": true
+    },
+    "children": ["list-context.image-list#payment-methods-banner"]
+  },
+  "list-context.image-list#payment-methods-banner": {
+    "children": ["slider-layout#payment-methods-banner"],
+    "props": {
+      "preload": true,
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-5-DESKTOP.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/COVER-PAGE-BUSINESS-5-MOBILE.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#payment-methods-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false
+    }
+  },
+  "flex-layout.row#payment-methods-title": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTop", "SeparatorBottom"]
+    },
+    "children": ["rich-text#payment-methods-title"]
+  },
+  "rich-text#payment-methods-title": {
+    "props": {
+      "text": "# MEDIOS DE PAGOS \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#payment-methods-content": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 4,
+      "fullWidth": true,
+      "blockClass": "StoreContainer"
+    },
+    "children": ["payment-methods"]
+  }
+}

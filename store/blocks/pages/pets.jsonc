@@ -1,0 +1,230 @@
+{
+  "store.custom#page-pets": {
+    "blocks": [
+      "responsive-layout.desktop#page-pets",
+      "responsive-layout.tablet#page-pets",
+      "responsive-layout.phone#page-pets",
+      "search-result-layout.customQuery#page-pets-desktop",
+      "pattern-background-home"
+    ]
+  },
+  "responsive-layout.desktop#page-pets": {
+    "children": ["flex-layout.row#page-pets-banner", "__fold__"]
+  },
+  "responsive-layout.tablet#page-pets": {
+    "children": ["flex-layout.row#page-pets-banner", "__fold__"]
+  },
+  "responsive-layout.phone#page-pets": {
+    "children": ["flex-layout.row#page-pets-banner", "__fold__"]
+  },
+  ////
+  "search-result-layout.customQuery#page-pets-desktop": {
+    "props": {
+      "preventRouteChange": true,
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        //"hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "261",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+        /*
+        "orderByField": "OrderByBestDiscountDESC",
+        //"hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "mascotas",
+        "mapField": "c",
+        "skusFilter": "ALL_AVAILABLE"*/
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-pets", "search-result-layout.mobile#page-pets", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-pets": {
+    "children": ["flex-layout.row#search-title-custom-pets", "flex-layout.row#searchbread", "flex-layout.row#result"],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true,
+      //"blockClass": "fixpets",
+      "blockClass": "TemplatePlpCustomMascotas"
+    }
+  },
+  "search-result-layout.mobile#page-pets": {
+    "children": [
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      //"flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "TemplatePlpCustomMascotas",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  /////
+  "flex-layout.row#page-pets-banner": {
+    "props": {
+      //"blockClass": ["StoreContainer"],
+      //"marginTop": 4,
+      "marginBottom": 8,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-pets-banner12"]
+  },
+  "list-context.image-list#page-pets-banner12": {
+    "children": ["slider-layout#page-pets-banner12"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          //"image": "https://i.imgur.com/61bIlxw.jpg",
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-PETS-2023-DESK.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-PETS-2023-MOB.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-pets-banner12": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom", "ImageBannerPageCustomBrandpets"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  // "flex-layout.row#page-pets-banner2": {
+  //   "props": {
+  //     //"blockClass": ["StoreContainer"],
+  //     "marginTop": 0,
+  //     "fullWidth": true,
+  //     "horizontalAlign": "center"
+  //   },
+  //   "children": ["list-context.image-list#page-pets-banner2"]
+  // },
+  // "list-context.image-list#page-pets-banner2": {
+  //   "children": ["slider-layout#page-pets-banner2"],
+  //   "props": {
+  //     "preload": true,
+  //     "images": [
+  //       {
+  //         "image": "https://i.imgur.com/gIrG9Ti.png"
+  //         //"mobileImage": "https://via.placeholder.com/1025x350/00000/FFFFFF/%20C/O%20https://placeholder.com/?text=Banner"
+  //       }
+  //     ]
+  //   }
+  // },
+  // "slider-layout#page-pets-banner2": {
+  //   "props": {
+  //     //"blockClass": ["ImageBannerPageCustom", "ImageBannerPageCustompets"],
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": true
+  //   }
+  // },
+  ///
+  "flex-layout.row#banner-slider-pets": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer"],
+      "paddingTop": 6
+    },
+    "children": ["flex-layout.col#image-slide-pets", "flex-layout.col#carrusel-slide-pets"]
+  },
+
+  "flex-layout.col#image-slide-pets": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["image#image-slide-pets1"]
+  },
+
+  "image#image-slide-pets1": {
+    "props": {
+      "src": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-PETS-PLP-COVER-2-LMTD-2022.jpg",
+      "maxHeight": "430px"
+    }
+  },
+
+  "flex-layout.col#carrusel-slide-pets": {
+    "props": {
+      "width": "70%",
+      "blockClass": ["BannerCarruselCustomCol2", "SliderBrandpets"]
+    },
+    "children": ["flex-layout.row#carousel-banner-pets-desk"]
+  },
+  ////
+  "flex-layout.row#headline-banner-carousel-pets": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#headline-banner-carousel-pets"]
+  },
+
+  "rich-text#headline-banner-carousel-pets": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "🐶 La Mesa de las Mascotas 😺",
+      "blockClass": "HeadlineBannerCarousel"
+    }
+  },
+  ///
+  "flex-layout.row#carousel-banner-pets-desk": {
+    "children": ["list-context.product-list#carousel-banner-pets-desk"]
+  },
+  "list-context.product-list#carousel-banner-pets-desk": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carousel-banner-pets-desk"],
+    "props": {
+      "collection": "261",
+      // "orderBy": "OrderByTopSaleDESC",
+      //"category": "142/146",
+      //"hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByTopSaleDESC",
+      "specificationFilters": [],
+      "skusFilter": "ALL_AVAILABLE"
+    }
+  },
+  "slider-layout#carousel-banner-pets-desk": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#search-title-custom-pets": {
+    "props": {
+      "blockClass": ["StoreContainer", "DynamicTitleCustom"]
+    },
+    "children": ["search-title.v2"]
+  }
+}

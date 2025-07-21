@@ -1,0 +1,144 @@
+.freigthScaleContainer {
+  background-color: #000;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 5px 0 !important;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  max-width: 800px;
+  padding: 0;
+  margin: 0 auto !important ;
+  justify-content: center;
+  align-items: center;
+}
+
+.freigthScaleContainer .text2 {
+  font-size: unset;
+}
+.sliderContainer {
+  margin: 5px 5px !important;
+  height: 8px !important;
+  flex: 1;
+  max-width: 300px;
+}
+.barContainer {
+  background: #009eb1 !important;
+  height: 6px !important;
+}
+
+/**/
+.sliderText {
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding: 0;
+  text-align: left !important;
+  font-size: 14px;
+  margin-left: 5px !important;
+}
+
+.text1 {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.text2 {
+  text-transform: uppercase;
+  font-size: 0 !important;
+  margin-left: 2px;
+  text-align: center;
+  display: block;
+}
+.text2::before {
+  content: 'envío gratis🎉';
+  font-size: 0.625rem !important;
+  font-size: 0.75rem !important;
+  text-align: center;
+}
+.text3 {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+.text4 {
+  font-size: 0 !important;
+  text-transform: uppercase;
+  /*font-size: 0.625rem !important;*/
+}
+.text4::before {
+  content: '¡Conseguiste tu envío gratis en esta Compra!';
+  font-size: 0.75rem !important;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+.currencyContainer {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+.currencyInteger {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+.currencyCode {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+}
+/**/
+
+.text0 {
+  color: #fff !important;
+}
+
+.freigthScaleContainer .text0 {
+  display: none;
+}
+
+.text0 {
+  font-size: 0 !important;
+}
+.text1 {
+  color: #fff !important;
+}
+.text2 {
+  color: #fff !important;
+}
+.text3 {
+  color: #fff !important;
+}
+.currencyText {
+  color: #fff !important;
+}
+
+@media (max-width: 1024px) {
+  .freigthScaleContainer {
+    max-width: 80% !important;
+    align-items: center;
+  }
+  .text1 {
+    font-size: 0 !important;
+  }
+  .text2::before {
+    content: '30.000';
+    margin-right: 5px;
+  }
+  /* .text3 {
+    display: none !important;
+  } */
+  .sliderContainer {
+    width: 80%;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    border: none;
+  }
+  .text4::before {
+    color: #fff !important;
+  }
+
+  .currencyText {
+    font-size: 0 !important;
+  }
+}

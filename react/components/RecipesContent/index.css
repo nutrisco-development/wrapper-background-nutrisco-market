@@ -1,0 +1,319 @@
+.RecipeFoodDetails {
+  padding-top: 1.5rem;
+}
+.RecipeFoodDetailsIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #4d5858;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.RecipeFoodFeatured {
+  display: flex;
+  font-weight: 600;
+  color: #4d5858;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.RecipeFoodDetailsIconsItem {
+  display: flex;
+  align-items: center;
+}
+.RecipeFoodDetailsIconsItem svg {
+  width: 20px;
+  height: 20px;
+}
+.RecipeFoodDetailsIconsSeparator {
+  margin: 0 5px;
+}
+.RecipeFoodDetailsList {
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.RecipeFoodDetailsListItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #4d5858;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.RecipeFoodFeaturedList {
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+.RecipeFoodFeaturedListItem {
+  display: flex;
+  flex-direction: row;
+  color: #4d5858;
+  font-size: 0.875rem;
+  align-items: center;
+}
+
+.RecipeFoodFeaturedListItem span {
+  display: flex;
+  flex-direction: row;
+  color: #4d5858;
+  font-size: 0.875rem;
+  align-items: center;
+  padding: 0.2rem 0;
+  margin-left: 0.5rem;
+}
+
+.RecipeFoodFeaturedListItem svg {
+  font-size: 1rem;
+}
+
+.RecipeFoodDetailsListItem::marker {
+  display: none;
+}
+.RecipeFoodDetailsListItemTitle {
+  margin-right: 5px;
+  color: #4d5858;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.RecipeFoodSheet {
+}
+
+.RecipeFoodSheetTitle {
+  color: #4d5858;
+  margin-block-end: unset;
+  margin-block-start: unset;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid #009eb1;
+  display: inline;
+  width: auto;
+  line-height: 1.5;
+}
+
+.RecipeFoodIngredientsList {
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.RecipeFoodIngredientsListItem {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  color: #4d5858;
+
+  font-size: 0.875rem;
+}
+
+.RecipeFoodInstructionsList {
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.RecipeFoodInstructionsListItem {
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+  color: #4d5858;
+
+  flex-direction: column;
+}
+.RecipeFoodInstructionsListItem h2 {
+  color: #4d5858;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+.RecipeFoodInstructionsListItem p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.RecipeFoodSheetSeparator {
+  padding: 0 0 1rem 0;
+}
+
+.RecipeFoodSheetShortTips {
+  margin: 5px 0 0 0;
+  line-height: 1.5;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: #4d5858;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+
+.RecipeFoodSheetShortDescription {
+  font-size: 0.875rem;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  color: #4d5858;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.RecipeFoodSheetLinkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RecipeFoodSheetLink {
+  background-color: #5b9d1c;
+  border-radius: 0.625rem;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  text-decoration: unset;
+  font-weight: 500;
+  width: auto !important;
+  padding-top: 0.25em;
+  padding-bottom: 0.32em;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/**/
+
+.RecipeFoodSection {
+  padding: 1rem 0;
+}
+.RecipeFoodGrid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 600px 1fr;
+  gap: 0px;
+  background: red;
+  border-radius: 3px;
+  color: #9e9e9e;
+  background: white;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.RecipeFoodGridItem1 {
+}
+
+.RecipeFoodGridItem1BoxImage {
+  max-width: 480px;
+  max-height: 480px;
+  width: 35vw;
+  height: 35vw;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.RecipeFoodGridItem2 {
+}
+
+.RecipeFoodGridItem1Box {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.RecipeFoodGridItem2Box {
+  padding: 1.5rem;
+  /* display: flex; */
+  height: 100%;
+  /* flex-direction: column; */
+}
+
+.RecipeFoodGridItem2Divider {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+}
+
+@media (min-width: 540px) and (max-width: 1080px) {
+  .RecipeFoodGrid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .RecipeFoodGridItem1BoxImage {
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+    object-fit: cover;
+  }
+  .RecipeFoodFeaturedList,
+  .RecipeFoodIngredientsList,
+  .RecipeFoodInstructionsList {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 540px) {
+  .RecipeFoodGrid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .RecipeFoodGridItem2Divider {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .RecipeFoodGridItem1BoxImage {
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+  }
+  .RecipeFoodFeaturedList,
+  .RecipeFoodIngredientsList,
+  .RecipeFoodInstructionsList {
+    margin-bottom: 5px;
+  }
+}
+
+.RecipeFoodBoxBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RecipeFoodBtn {
+  background-color: #5b9d1c;
+  border-radius: 0.625rem;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  text-decoration: unset;
+  font-weight: 500;
+  padding-top: 0.25em;
+  padding-bottom: 0.32em;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  min-height: 2.5rem;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}

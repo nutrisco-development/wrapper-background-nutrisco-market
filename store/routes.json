@@ -1,0 +1,210 @@
+{
+  "store.custom#terms-conditions": {
+    "path": "/empresa/bases-y-condiciones",
+    "isSitemapEntry": true
+  },
+  "store.custom#shipping-policy": {
+    "path": "/empresa/politicas-de-envio",
+    "isSitemapEntry": true
+  },
+  "store.custom#privacy-policy": {
+    "path": "/empresa/politicas-de-privacidad",
+    "isSitemapEntry": true
+  },
+  "store.custom#payment-methods": {
+    "path": "/empresa/medios-de-pagos",
+    "isSitemapEntry": true
+  },
+  "store.custom#contact-us-form": {
+    "path": "/empresa/contactanos",
+    "isSitemapEntry": false
+  },
+  "store.custom#about-us": {
+    "path": "/empresa/nosotros",
+    "isSitemapEntry": true
+  },
+  "store.custom#marcas": {
+    "path": "/empresa/marcas",
+    "isSitemapEntry": true
+  },
+  "store.custom#frecuently-asqued-questions": {
+    "path": "/empresa/preguntas-frecuentes",
+    "isSitemapEntry": true
+  },
+  "store.custom#bases-conditions-children-day": {
+    "path": "/empresa/bases-concurso-dia-del-nino",
+    "isSitemapEntry": false
+  },
+  "store.custom#recipe-list-food": {
+    "path": "/recetarios",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-1": {
+    "path": "/recetarios/ceviche-de-atun",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-2": {
+    "path": "/recetarios/ceviche-de-lomos-de-jurel",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-3": {
+    "path": "/recetarios/chupe-de-jurel",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-4": {
+    "path": "/recetarios/albondigas-de-jurel-con-salsa-de-tomates",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-5": {
+    "path": "/recetarios/filetes-de-jurel-con-pure-de-arvejas",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-6": {
+    "path": "/recetarios/arroz-cremoso-de-jurel",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-7": {
+    "path": "/recetarios/albondigas-de-jurel-con-espagueti",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-8": {
+    "path": "/recetarios/estofado-de-jurel-con-pimentones-asados",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-9": {
+    "path": "/recetarios/choritos-con-papas",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-10": {
+    "path": "/recetarios/choritos-thai",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-11": {
+    "path": "/recetarios/reineta-arvejada",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-12": {
+    "path": "/recetarios/tomates-rellenos-de-jurel-ahumado-fisherman-y-quinoa",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-13": {
+    "path": "/recetarios/rollitos-de-papel-de-arroz-con-jurel-en-aceite-de-oliva",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-14": {
+    "path": "/recetarios/carpaccio-de-locos-crema-de-palta-y-salsa-verde",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-15": {
+    "path": "/recetarios/salpicon-de-mariscos-al-pesto-rosso",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-16": {
+    "path": "/recetarios/lasana-albondigas-atun-bechamel",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-17": {
+    "path": "/recetarios/sopa-choritos-en-vino-blanco",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-18": {
+    "path": "/recetarios/choritos-a-la-puttanesca",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-19": {
+    "path": "/recetarios/tarta-merluza-en-hojaldre",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-20": {
+    "path": "/recetarios/reineta-al-horno-con-papas-en-laminas-a-las-finas-hierbas",
+    "isSitemapEntry": true
+  },
+  "store.custom#recipe-food-pattern-21": {
+    "path": "/recetarios/empanaditas-integrales-de-jurel",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-nature-valley": {
+    "path": "/pages/nature-valley",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-haagen-dazs": {
+    "path": "/pages/haagen-dazs",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-fish4pets": {
+    "path": "/pages/fish4pets",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-petmarine": {
+    "path": "/pages/petmarine",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-ox": {
+    "path": "/pages/ox",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-pets": {
+    "path": "/pages/mascotas",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-gentil2": {
+    "path": "/pages/gentil",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-apache": {
+    "path": "/pages/apache",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-petfood": {
+    "path": "/pages/petfood",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-san-jose-new": {
+    "path": "/pages/san-jose",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-flip": {
+    "path": "/pages/flip",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-betty-crocker-new": {
+    "path": "/pages/betty-crocker",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-bou": {
+    "path": "/pages/bou",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-ofertas": {
+    "path": "/pages/ofertas",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-promo-fp": {
+    "path": "/pages/fiestas-patrias",
+    "isSitemapEntry": false
+  },
+  "store.custom#page-brand-colorado": {
+    "path": "/pages/colorado",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-royal-elixir": {
+    "path": "/pages/royal-elixir",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-fisherman": {
+    "path": "/pages/fisherman",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-segafredo": {
+    "path": "/pages/segafredo",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-brand-cook-green": {
+    "path": "/pages/cook-green",
+    "isSitemapEntry": true
+  },
+  "store.custom#page-cyber": {
+    "path": "/pages/cyber",
+    "isSitemapEntry": false
+  }
+}

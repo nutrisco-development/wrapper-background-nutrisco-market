@@ -1,0 +1,135 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  /* opacity: 0;
+  transition: opacity 200ms ease-in-out; */
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}
+
+.element {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%);
+  max-width: 236px;
+}
+.productBrand {
+  font-size: 14px;
+  display: inline-flex;
+  text-align: center;
+}
+/*
+.brandName {
+  min-height: 70px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  color: grey;
+  text-transform: uppercase;
+
+}*/
+
+.productBrandName {
+  color: #808080;
+  font-size: 10px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-top: 10px;
+}
+
+.brandName {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 480px) {
+  .brandName {
+    -webkit-line-clamp: 3;
+  }
+}
+
+.nameContainer {
+  padding-top: 0;
+}
+
+.savings--summary {
+  background: rgba(203, 24, 0, 1);
+  font-size: 14px;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #ffffff;
+}
+
+.buyButton :global(.vtex-button) {
+  border-radius: 0.625rem;
+}
+.clearLink :global(.vtex-button) {
+  border-radius: 0.625rem;
+  min-height: auto;
+  height: 34px;
+  /* max-width: 130px; */
+}
+
+@media (max-width: 639px) {
+  .clearLink :global(.vtex-button) {
+    margin-top: 10px;
+  }
+}
+
+/* .image {
+  margin-top: 10px;
+} */

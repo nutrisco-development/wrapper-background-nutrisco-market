@@ -1,0 +1,93 @@
+{
+  "store.custom#page-haagen-dazs-4x": {
+    "blocks": ["search-result-layout.customQuery#page-haagen-dazs-4x"]
+  },
+  "search-result-layout.customQuery#page-haagen-dazs-4x": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        // "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "queryField": "191",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#page-haagen-dazs-4x",
+      "search-result-layout.mobile#page-haagen-dazs-4x",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#page-haagen-dazs-4x": {
+    "children": [
+      "flex-layout.row#page-haagen-dazs-4x-banner",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile#page-haagen-dazs-4x": {
+    "children": [
+      "flex-layout.row#page-haagen-dazs-4x-banner",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#page-haagen-dazs-4x-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "paddingBottom": 10,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-haagen-dazs-4x-banner"]
+  },
+  "list-context.image-list#page-haagen-dazs-4x-banner": {
+    "children": ["slider-layout#page-haagen-dazs-4x-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/top-banner-desktop-helado-2022.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/top-banner-mobile-helado-2022.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-haagen-dazs-4x-banner": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

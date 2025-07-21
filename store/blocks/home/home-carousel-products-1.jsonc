@@ -1,0 +1,77 @@
+{
+  // #1
+  "flex-layout.row#CarouselCategory-1": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer", "SeparatorCarruselTop"]
+    },
+    "children": ["flex-layout.col#CarouselCategory-1-Image", "flex-layout.col#CarouselCategory-1-Slider"]
+  },
+  "flex-layout.col#CarouselCategory-1-Image": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["rich-text#CarouselCategory-1-ImageTitle", "image#CarouselCategory-1-Image"]
+  },
+  "rich-text#CarouselCategory-1-ImageTitle": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      // "text": "Pescados",
+      "text": "[Pescados](/conservas/pescados)",
+      "blockClass": ["CarouselCategoryImageTitle", "BgLightBlueBrand"]
+    }
+  },
+  "image#CarouselCategory-1-Image": {
+    "props": {
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/HomeCarouselProduct1.png",
+      "maxHeight": "430px",
+      "link": {
+        "url": "/conservas/pescados",
+        "attributeTitle": "Conservas de Pescados",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "flex-layout.col#CarouselCategory-1-Slider": {
+    "props": {
+      "width": "70%",
+      "blockClass": "BannerCarruselCustomCol2"
+    },
+    "children": ["flex-layout.row#CarouselCategory-1-Slider"]
+  },
+  "flex-layout.row#CarouselCategory-1-Slider": {
+    "children": ["list-context.product-list#CarouselCategory-1-Slider"]
+  },
+  "list-context.product-list#CarouselCategory-1-Slider": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#CarouselCategory-1-Slider"],
+    "props": {
+      "category": "137/138",
+      //"hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByTopSaleDESC",
+      "specificationFilters": [],
+      "skusFilter": "ALL_AVAILABLE"
+    }
+  },
+  "slider-layout#CarouselCategory-1-Slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+
+  ///
+}

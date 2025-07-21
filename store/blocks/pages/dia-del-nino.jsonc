@@ -1,0 +1,89 @@
+{
+  "store.custom#page-dia-del-nino": {
+    "blocks": ["search-result-layout.customQuery#page-dia-del-nino"]
+  },
+  "search-result-layout.customQuery#page-dia-del-nino": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        //"hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "queryField": "190",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-dia-del-nino", "search-result-layout.mobile#page-dia-del-nino", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-dia-del-nino": {
+    "children": [
+      "flex-layout.row#page-dia-del-nino-banner",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile#page-dia-del-nino": {
+    "children": [
+      "flex-layout.row#page-dia-del-nino-banner",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#page-dia-del-nino-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "paddingBottom": 10,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-dia-del-nino-banner"]
+  },
+  "list-context.image-list#page-dia-del-nino-banner": {
+    "children": ["slider-layout#page-dia-del-nino-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-DIA-DEL-NINO-DESK-2022.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/TBANNER-DIA-DEL-NINO-MOB-2022.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-dia-del-nino-banner": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

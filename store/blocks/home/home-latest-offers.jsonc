@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#HomeLatestOffersTitle": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTopHome", "SeparatorBottom"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#HomeLatestOffersTitle"]
+  },
+  "rich-text#HomeLatestOffersTitle": {
+    "props": {
+      "text": "## ÚLTIMAS OFERTAS DEV 🚀 \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false
+    }
+  }
+}

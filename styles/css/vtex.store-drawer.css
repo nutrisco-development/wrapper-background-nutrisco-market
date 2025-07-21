@@ -1,0 +1,24 @@
+/* .drawer {
+  background-color: #f4f4f4;
+} */
+
+.openIconContainer {
+  padding: 0;
+  margin: 0 5px 0 0;
+}
+
+.drawer {
+  background-color: #fff;
+}
+
+.childrenContainer {
+  width: 100%;
+}
+
+.drawerHeader {
+  width: 100%;
+}
+
+.closeIconContainer {
+  justify-content: flex-end;
+}

@@ -1,0 +1,192 @@
+{
+  "store.custom#page-brand-bou": {
+    "blocks": [
+      "responsive-layout.desktop#page-brand-bou",
+      "responsive-layout.tablet#page-brand-bou",
+      "responsive-layout.phone#page-brand-bou"
+      //"pattern-background-home"
+    ]
+  },
+  "responsive-layout.desktop#page-brand-bou": {
+    "children": ["flex-layout.row#page-bou-banner", "flex-layout.row#page-brand-bou-bg-desktop"]
+  },
+  "responsive-layout.tablet#page-brand-bou": {
+    "children": ["flex-layout.row#page-bou-banner", "flex-layout.row#page-brand-bou-bg-mobile"]
+  },
+  "responsive-layout.phone#page-brand-bou": {
+    "children": ["flex-layout.row#page-bou-banner", "flex-layout.row#page-brand-bou-bg-mobile"]
+  },
+  "flex-layout.row#page-brand-bou-bg-desktop": {
+    "children": ["search-result-layout.customQuery#page-bou-desktop"],
+    "props": {
+      "blockClass": ["bgPageCustom", "bgPageCustomBou"]
+    }
+  },
+  "flex-layout.row#page-brand-bou-bg-mobile": {
+    "children": ["search-result-layout.customQuery#page-bou-mobile"],
+    "props": {
+      "blockClass": ["bgPageCustom", "bgPageCustomBou"]
+    }
+  },
+  "search-result-layout.customQuery#page-bou-desktop": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        "maxItemsPerPage": 12,
+        "queryField": "289",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-bou", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-bou": {
+    "children": ["flex-layout.row#banner-slider-bou", "flex-layout.row#searchbread", "flex-layout.row#result"],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+      // "blockClass": "TemplatePlpCustomgentil",
+    }
+  },
+  "flex-layout.row#page-bou-banner": {
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-bou-banner"]
+  },
+  "list-context.image-list#page-bou-banner": {
+    "children": ["slider-layout#page-bou-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-MAIN-BOU-1-MAY-2023-DESK.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-MAIN-BOU-1-MAY-2023-MOB.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-bou-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.row#banner-slider-bou": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer"]
+    },
+    "children": ["flex-layout.col#image-slide-bou", "flex-layout.col#carrusel-slide-bou"]
+  },
+  "flex-layout.col#image-slide-bou": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["image#image-slide-bou"]
+  },
+
+  "image#image-slide-bou": {
+    "props": {
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/BANNER-COVER-BOU-1-MAY-2023.jpg",
+      "maxHeight": "430px"
+    }
+  },
+  "flex-layout.col#carrusel-slide-bou": {
+    "props": {
+      "width": "70%",
+      "blockClass": "BannerCarruselCustomCol2"
+    },
+    "children": ["flex-layout.row#carousel-banner-bou-desk"]
+  },
+
+  "search-result-layout.customQuery#page-bou-mobile": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        "maxItemsPerPage": 12,
+        "queryField": "289",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.mobile#page-bou", "search-not-found-layout"]
+  },
+  "search-result-layout.mobile#page-bou": {
+    "children": [
+      "flex-layout.row#headline-banner-carousel-bou",
+      "flex-layout.row#carousel-banner-bou-desk",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "TemplatePlpCustomgentil",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#headline-banner-carousel-bou": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#headline-banner-carousel-bou"]
+  },
+
+  "rich-text#headline-banner-carousel-bou": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Revisa todas nuestras ofertas",
+      "blockClass": "HeadlineBannerCarousel"
+    }
+  },
+
+  "flex-layout.row#carousel-banner-bou-desk": {
+    "children": ["list-context.product-list#carousel-banner-bou-desk"]
+  },
+  "list-context.product-list#carousel-banner-bou-desk": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carousel-banner-bou-desk"],
+    "props": {
+      "collection": "289",
+      //"hideUnavailableItems": true,
+      "maxItems": 10,
+      "orderBy": "OrderByTopSaleDESC",
+      "specificationFilters": []
+    }
+  },
+  "slider-layout#carousel-banner-bou-desk": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}

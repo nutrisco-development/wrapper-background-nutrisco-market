@@ -1,0 +1,3 @@
+import RecetaEstofadoJurelPimentonesAsados from './components/RecipesContent/RecetaEstofadoJurelPimentonesAsados';
+
+export default RecetaEstofadoJurelPimentonesAsados;

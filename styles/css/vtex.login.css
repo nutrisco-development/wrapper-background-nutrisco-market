@@ -1,0 +1,283 @@
+.label {
+  color: #fff;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.loading {
+  min-width: 150px;
+}
+
+.contentForm .emailForm .inputContainerEmail::after {
+  content: "Si no te llega a tu bandeja de entrada, no olvides revisar en la solapa Promociones o en Correo no deseado";
+  font-size: 0.75rem;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  color: #e10707;
+}
+
+.label {
+  color: #fff;
+  display: flex;
+  width: 100px;
+}
+.container {
+  color: #fff;
+}
+
+.container .relative .bg-transparent {
+  background: red;
+}
+
+.box {
+  right: -100px !important;
+}
+
+:global(.vtex__icon-spinner) {
+  color: #009eb1;
+}
+.contentAlwaysWithOptions {
+  min-height: unset;
+}
+
+.contentAlwaysWithOptions {
+  padding-top: 0;
+}
+
+.content--beginCreatePass {
+  padding-bottom: 0;
+}
+
+.content--emailAndPassword {
+  padding-bottom: 0;
+}
+
+@media (min-width: 1050px) {
+  .profileIcon {
+    width: 28px;
+    height: 28px;
+  }
+  .label {
+    padding-left: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1049px) {
+  .profileIcon {
+    display: none;
+  }
+  .label {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.profile {
+  color: #fff;
+  display: block;
+}
+
+@media (min-width: 1050px) {
+  .container :global(.vtex-button) {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container :global(.vtex-button) :global(.vtex-button__label) {
+    margin: 0;
+    padding: 0;
+  }
+
+  .label {
+    margin: 0;
+    padding: 0;
+  }
+  .container :global(.vtex-button) :global(.vtex-button__label) div div {
+    margin: 0;
+    padding: 0;
+  }
+  .arrowUp {
+    transform: translateX(-25px) rotate(45deg);
+  }
+}
+
+.formTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  padding-top: 0;
+}
+
+.button :global(.vtex-button) {
+  border: 2px solid #009eb1;
+  width: 100%;
+  min-height: 2.5rem;
+  color: #585858;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 0.625rem;
+}
+
+.content {
+  padding-top: 80px;
+}
+
+.sendButton :global(.vtex-button) {
+  background-color: #009eb1;
+  border: none;
+}
+
+.dontHaveAccount {
+  font-size: 14px;
+  font-weight: 600;
+  color: #009eb1;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  opacity: 1;
+  transition: none;
+}
+
+.forgotPasswordLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #009eb1;
+  text-transform: uppercase;
+}
+.forgotPasswordLink:hover {
+  font-size: 14px;
+  font-weight: 600;
+  color: #009eb1;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: none;
+}
+
+.dontHaveAccount:active,
+.dontHaveAccount:focus,
+.dontHaveAccount:hover,
+.dontHaveAccount:link,
+.dontHaveAccount:visited {
+  opacity: 1;
+  transition: none;
+}
+
+.forgotPasswordLink:active,
+.forgotPasswordLink:focus,
+.forgotPasswordLink:hover,
+.forgotPasswordLink:link,
+.forgotPasswordLink:visited {
+  opacity: 1;
+  transition: none;
+}
+
+.box .content {
+  /* background-color: #f9f9f9; */
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  padding: 0;
+}
+
+.box :global(.vtex-button) :global(.vtex-button__label) :global(.nr1) :global(.t-small) {
+  font-size: 14px;
+  font-weight: 600;
+  color: #009eb1;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.button {
+  background-color: transparent;
+}
+
+/* .button :global(.t-action--small) {
+  color: #333;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.vtex-button :global(.t-action--small) {
+  color: #333;
+  font-size: 14px;
+  font-weight: 800;
+} */
+
+/* .vtex-login-2-x-loginOptionsContainer {
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+} */
+
+.vtex-login-2-x-contentForm {
+  padding: 1.5rem;
+}
+.box .content {
+  padding: 1.2rem !important;
+  border-bottom: 14px solid #009eb1;
+  background-color: #f9f9f9;
+}
+
+.contentContainer {
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.options .optionsList {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.optionsList .optionsListItem:nth-child(1) {
+  order: 3;
+}
+.optionsList .optionsListItem:nth-child(2) {
+  order: 4;
+}
+.optionsList .optionsListItem:nth-child(3) {
+  order: 1;
+}
+.optionsList .optionsListItem:nth-child(4) {
+  order: 2;
+}
+
+.profile {
+  max-width: 120px !important;
+  padding: 0;
+}
+
+@media (min-width: 1026px) and (max-width: 1460px) {
+  .profile {
+    max-width: 85px !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    max-width: 100px !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.formTitle {
+  color: #009eb1;
+  font-weight: 700;
+  text-align: center !important;
+  justify-self: left;
+  padding-left: 0;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  padding-top: 0.625rem;
+}

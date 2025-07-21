@@ -1,0 +1,67 @@
+{
+  "modal-trigger#modal-login": {
+    "children": ["link#modal-login", "modal-layout#modal-login"]
+  },
+  "link#modal-login": {
+    "props": {
+      "label": "comprar_modal",
+      "displayMode": "button",
+      "buttonProps": {
+        "size": "small",
+        "variant": "primary"
+      }
+    }
+  },
+  "modal-layout#modal-login": {
+    "children": ["modal-header#modal-login", "modal-content#modal-login"]
+  },
+  "modal-header#modal-login": {
+    "children": ["flex-layout.col#modal-login-header"]
+  },
+  "modal-content#modal-login": {
+    "children": ["flex-layout.row#modal-login-content-1", "flex-layout.row#modal-login-content-2", "flex-layout.row#modal-login-content-3"]
+  },
+  "flex-layout.col#modal-login-header": {
+    "children": ["rich-text#modal-login-header"],
+    "props": {
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+  "rich-text#modal-login-header": {
+    "props": {
+      "text": "### Iniciar Sesión"
+    }
+  },
+  "flex-layout.row#modal-login-content-1": {
+    "children": ["rich-text#modal-login-1"]
+  },
+  "rich-text#modal-login-1": {
+    "props": {
+      "text": "Por favor inicia sesión para realizar tu compra."
+    }
+  },
+  "flex-layout.row#modal-login-content-2": {
+    "props": {
+      "marginTop": 1
+    },
+    "children": ["link#modal-login-content-2"]
+  },
+  "link#modal-login-content-2": {
+    "props": {
+      "href": "/login?returnUrl={queryString.returnUrl}",
+      "label": "Iniciar Sesión",
+      "displayMode": "button",
+      "buttonProps": {
+        "size": "small",
+        "variant": "primary"
+      }
+    }
+  },
+  "flex-layout.row#modal-login-content-3": {
+    "props": {
+      "marginTop": 5
+    }
+    //"children": ["login-content#1"]
+  }
+}

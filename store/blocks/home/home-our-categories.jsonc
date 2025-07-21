@@ -1,0 +1,250 @@
+{
+  "flex-layout.row#HomeOurCategoriesTitle": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTopHome", "SeparatorBottom"],
+      "fullWidth": false,
+      "paddingTop": 6
+    },
+    "children": ["rich-text#HomeOurCategoriesTitle"]
+  },
+  "rich-text#HomeOurCategoriesTitle": {
+    "props": {
+      "text": "## NUESTRAS CATEGORÍAS 🤩 \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false
+    }
+  },
+  "responsive-layout.desktop#HomeOurCategoriesCircle": {
+    "children": ["flex-layout.row#HomeOurCategoriesCircleDesktop"]
+  },
+  "responsive-layout.tablet#HomeOurCategoriesCircle": {
+    "children": ["flex-layout.row#HomeOurCategoriesCircleMobile"]
+  },
+  "responsive-layout.phone#HomeOurCategoriesCircle": {
+    "children": ["flex-layout.row#HomeOurCategoriesCircleMobile"]
+  },
+  "flex-layout.row#HomeOurCategoriesCircleDesktop": {
+    "props": {
+      "width": "100%",
+      "marginTop": 6,
+      "colSizing": "auto",
+      "blockClass": ["StoreContainer", "SeparatorBottom", "PromotionCircleGrid"],
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#promotion-02",
+      "flex-layout.col#promotion-01",
+      "flex-layout.col#promotion-03",
+      "flex-layout.col#promotion-04",
+      "flex-layout.col#promotion-05",
+      //"flex-layout.col#promotion-06",
+      "flex-layout.col#promotion-07",
+      "flex-layout.col#promotion-08"
+    ]
+  },
+  "flex-layout.row#HomeOurCategoriesCircleMobile": {
+    "props": {
+      "width": "100%",
+      "marginTop": 6,
+      "colSizing": "auto",
+      "blockClass": ["StoreContainer", "SeparatorBottom", "PromotionCircleGrid"],
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#promotion-02",
+      "flex-layout.col#promotion-01",
+      "flex-layout.col#promotion-03",
+      "flex-layout.col#promotion-04"
+    ]
+  },
+
+  "flex-layout.col#promotion-01": {
+    "children": ["rich-text#promotion-01", "image#promotion-01"]
+  },
+  "flex-layout.col#promotion-02": {
+    "children": ["rich-text#promotion-02", "image#promotion-02"]
+  },
+  "flex-layout.col#promotion-03": {
+    "children": ["rich-text#promotion-03", "image#promotion-03"]
+  },
+  "flex-layout.col#promotion-04": {
+    "children": ["rich-text#promotion-04", "image#promotion-04"]
+  },
+  "flex-layout.col#promotion-05": {
+    "children": ["rich-text#promotion-05", "image#promotion-05"]
+  },
+  "flex-layout.col#promotion-06": {
+    "children": ["rich-text#promotion-06", "image#promotion-06"]
+  },
+  "flex-layout.col#promotion-07": {
+    "children": ["rich-text#promotion-07", "image#promotion-07"]
+  },
+  "flex-layout.col#promotion-08": {
+    "children": ["rich-text#promotion-08", "image#promotion-08"]
+  },
+  "rich-text#promotion-01": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Conservas](/conservas)",
+      "font": "t-body",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "rich-text#promotion-02": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Congelados](/congelados)",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "rich-text#promotion-03": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Abarrotes](/abarrote)",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "rich-text#promotion-04": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Lácteos](/frescos-y-lacteos)",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "rich-text#promotion-05": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Bebestibles](/bebestible)",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "rich-text#promotion-06": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Packs](/pages/packs)",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "rich-text#promotion-07": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Pymes](/178?map=productClusterIds)",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "rich-text#promotion-08": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Ready to eat](/180?map=productClusterIds)",
+      "blockClass": "PromotionCircleText"
+    }
+  },
+  "image#promotion-01": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-9-LMTD.svg",
+      "link": {
+        "url": "/conservas",
+        "attributeTitle": "conservas",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+
+  "image#promotion-02": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-6-LMTD.svg",
+      "link": {
+        "url": "/congelados",
+        "attributeTitle": "congelados",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "image#promotion-03": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-2-LMTD.svg",
+      "link": {
+        "url": "/abarrote",
+        "attributeTitle": "abarrote",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+
+  "image#promotion-04": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-4-LMTD.svg",
+      "link": {
+        "url": "/frescos-y-lacteos",
+        "attributeTitle": "lacteos",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "image#promotion-05": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-3-LMTD.svg",
+      "link": {
+        "url": "/bebestible",
+        "attributeTitle": "bebestibles",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "image#promotion-06": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-5-LMTD.svg",
+      "link": {
+        "url": "/pages/packs",
+        "attributeTitle": "/pages/packs",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "image#promotion-07": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-1v2-LMTD.svg",
+      "link": {
+        "url": "/178?map=productClusterIds",
+        "attributeTitle": "packs",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "image#promotion-08": {
+    "props": {
+      "blockClass": "ImagePromotionNew",
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/ICON-CATEGORY-HOME-8-LMTD.svg",
+      "link": {
+        "url": "/180?map=productClusterIds",
+        "attributeTitle": "packs",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  }
+}

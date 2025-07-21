@@ -1,0 +1,81 @@
+{
+  "flex-layout.row#HomeFeaturedBrandTitle": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTopHome", "SeparatorBottom"],
+      "fullWidth": false,
+      "paddingTop": 6
+    },
+    "children": ["rich-text#HomeFeaturedBrandTitle"]
+  },
+  "rich-text#HomeFeaturedBrandTitle": {
+    "props": {
+      "text": "## MARCA DESTACADAS 😍 \n*line*\n*line*\n*line*",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "section-title",
+      "fullWidth": false,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },
+  "flex-layout.row#HomeFeaturedBrandCard": {
+    "props": {
+      "blockClass": ["promotion-grid", "StoreContainer"],
+      "marginTop": 6,
+      "colSizing": "auto",
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.row#HomeFeaturedBrandCard-1",
+      "flex-layout.row#HomeFeaturedBrandCard-2",
+      "flex-layout.row#HomeFeaturedBrandCard-3"
+    ]
+  },
+
+  "flex-layout.row#HomeFeaturedBrandCard-1": {
+    "children": ["image#HomeFeaturedBrandCard-1"]
+  },
+  "flex-layout.row#HomeFeaturedBrandCard-2": {
+    "children": ["image#HomeFeaturedBrandCard-2"]
+  },
+  "flex-layout.row#HomeFeaturedBrandCard-3": {
+    "children": ["image#HomeFeaturedBrandCard-3"]
+  },
+
+  "image#HomeFeaturedBrandCard-1": {
+    "props": {
+      "blockClass": "image-promotion",
+      "src": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-BRAND-CYBER-01.jpg",
+      "link": {
+        "url": "/pages/haagen-dazs",
+        "attributeTitle": "haagen dazs",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "image#HomeFeaturedBrandCard-2": {
+    "props": {
+      "blockClass": "image-promotion",
+      "src": "https://orizonb2ccl.vteximg.com.br/arquivos/OX-BRAND-CARD.jpg",
+      "link": {
+        "url": "/pages/ox",
+        "attributeTitle": "ox",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  },
+  "image#HomeFeaturedBrandCard-3": {
+    "props": {
+      "blockClass": "image-promotion",
+      "src": "https://orizonb2ccl.vteximg.com.br/arquivos/BANNER-BRAND-CYBER-03.jpg",
+      "link": {
+        "url": "/pages/nature-valley",
+        "attributeTitle": "nature valley",
+        "newTab": false,
+        "attributeNofollow": false
+      }
+    }
+  }
+}

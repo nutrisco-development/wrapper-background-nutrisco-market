@@ -1,0 +1,13 @@
+.expandIcon {
+  color: #727273;
+}
+
+@media (min-width: 1050px) {
+  .cartIcon {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+
+

@@ -1,0 +1,39 @@
+@media (max-width: 1049px) {
+  .minicartContainer,
+  .openIconContainer {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.minicartQuantityBadge {
+  background-color: #d40000;
+}
+
+.cartIcon {
+  width: 31px;
+  height: 31px;
+}
+
+.minicartSummary {
+  padding-top: 0;
+}
+
+.minicartContainer :global(.vtex-button__label) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 400px) and (max-width: 1049px) {
+  .minicartContainer :global(.vtex-button__label) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .minicartContainer :global(.vtex-button__label) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

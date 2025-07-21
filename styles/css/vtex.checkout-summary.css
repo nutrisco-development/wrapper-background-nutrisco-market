@@ -1,0 +1,9 @@
+.summaryItemLabel {
+  text-transform: uppercase;
+}
+.summarySmallDisclaimer {
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+  display: none;
+}

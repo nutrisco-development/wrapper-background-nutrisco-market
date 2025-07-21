@@ -1,0 +1,23 @@
+/* .wishlistIconContainer {
+  background-color: rebeccapurple;
+}
+.wishlistIconContainer :global(.vtex-button) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+} */
+/*
+.wishlistIconContainer :global(.vtex-button) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+} */
+
+.wishlistIconContainer :global(.vtex-button__label) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.developer_vtex {
+  color: red;
+}

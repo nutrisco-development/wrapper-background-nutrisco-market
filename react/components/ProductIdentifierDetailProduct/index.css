@@ -1,0 +1,26 @@
+.ProductIdentifierProductSheet {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  color: #888;
+
+  text-transform: uppercase;
+}
+.ProductIdentifierSkuProductSheet {
+  margin-right: 5px;
+}
+.ProductIdentifierSkuTitleProductSheet {
+}
+.ProductIdentifierReferenceProductSheet {
+  margin-right: 5px;
+}
+.ProductIdentifierReferenceTitleProductSheet {
+}
+.ProductIdentifierProductIdProductSheet {
+  display: none;
+}
+.ProductIdentifierProductIdTitleProductSheet {
+}

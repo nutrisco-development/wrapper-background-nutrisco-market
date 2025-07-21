@@ -1,0 +1,90 @@
+{
+  "store.custom#page-packs": {
+    "blocks": ["search-result-layout.customQuery#page-packs"]
+  },
+  "search-result-layout.customQuery#page-packs": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        // "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "queryField": "182",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-packs", "search-result-layout.mobile#page-packs", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-packs": {
+    "children": [
+      "flex-layout.row#page-packs-banner",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile#page-packs": {
+    "children": [
+      "flex-layout.row#page-packs-banner",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#page-packs-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "paddingBottom": 10,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-packs-banner"]
+  },
+  "list-context.image-list#page-packs-banner": {
+    "children": ["slider-layout#page-packs-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/TOP-BANNER-DESK-BRAND-PACK-PRODUCTS.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/TOP-BANNER-MOB-BRAND-PACK-PRODUCTS.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-packs-banner": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "store.custom#page-ofertas": {
+    "blocks": ["responsive-layout.desktop#page-ofertas", "responsive-layout.tablet#page-ofertas", "responsive-layout.phone#page-ofertas"]
+  },
+  "responsive-layout.desktop#page-ofertas": {
+    "children": ["search-result-layout.customQuery#page-ofertas-desktop"]
+  },
+  "responsive-layout.tablet#page-ofertas": {
+    "children": ["search-result-layout.customQuery#page-ofertas-mobile"]
+  },
+  "responsive-layout.phone#page-ofertas": {
+    "children": ["search-result-layout.customQuery#page-ofertas-mobile"]
+  },
+  "search-result-layout.customQuery#page-ofertas-desktop": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        // "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL_AVAILABLE",
+        "queryField": "Yes",
+        "mapField": "Promotion",
+        "simulationBehavior": "default"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#page-ofertas", "search-not-found-layout"]
+  },
+  "search-result-layout.desktop#page-ofertas": {
+    "children": [
+      "flex-layout.row#page-ofertas-banner",
+      "flex-layout.row#search-title-custom-ofertas",
+      "flex-layout.row#banner-slider-ofertas",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinite",
+      "defaultGalleryLayout": "grid",
+      //pre
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#page-ofertas-banner": {
+    "props": {
+      "blockClass": ["StoreContainer"],
+      "marginTop": 4,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["list-context.image-list#page-ofertas-banner"]
+  },
+  "list-context.image-list#page-ofertas-banner": {
+    "children": ["slider-layout#page-ofertas-banner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://orizonb2ccl.vteximg.com.br/arquivos/top-ofertas-new.jpg",
+          "mobileImage": "https://orizonb2ccl.vteximg.com.br/arquivos/cover-ofertas-new-01-mobilev2.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#page-ofertas-banner": {
+    "props": {
+      "blockClass": ["ImageBannerPageCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.row#banner-slider-ofertas": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["BannerCarruselCustom", "StoreContainer"]
+    },
+    "children": ["flex-layout.col#image-slide-ofertas", "flex-layout.col#carrusel-slide-ofertas"]
+  },
+
+  "flex-layout.col#image-slide-ofertas": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "marginRight": 1,
+      "blockClass": "BannerCarruselCustom1"
+    },
+    "children": ["image#image-slide-ofertas"]
+  },
+
+  "image#image-slide-ofertas": {
+    "props": {
+      "src": "https://orizonb2ccl.vtexassets.com/arquivos/cover-ofertas-new-01.jpg",
+      "maxHeight": "430px"
+    }
+  },
+
+  "flex-layout.col#carrusel-slide-ofertas": {
+    "props": {
+      "width": "70%",
+      "blockClass": "BannerCarruselCustomCol2"
+    },
+    "children": ["flex-layout.row#carousel-banner-ofertas-desk"]
+  },
+
+  "search-result-layout.customQuery#page-ofertas-mobile": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        // "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL_AVAILABLE",
+        "queryField": "Yes",
+        "mapField": "Promotion",
+        "simulationBehavior": "default"
+      }
+    },
+    "blocks": ["search-result-layout.mobile#page-ofertas", "search-not-found-layout"]
+  },
+  "search-result-layout.mobile#page-ofertas": {
+    "children": [
+      "flex-layout.row#page-ofertas-banner",
+      "flex-layout.row#headline-banner-carousel-ofertas",
+      "flex-layout.row#carousel-banner-ofertas-desk",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "search-products-count-per-page"
+    ],
+    "props": {
+      "blockClass": "mobileResults",
+      "pagination": "infinite",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#headline-banner-carousel-ofertas": {
+    "props": {
+      "blockClass": ["StoreContainer", "HeadlineBannerCarousel"],
+      "fullWidth": false
+    },
+    "children": ["rich-text#headline-banner-carousel-ofertas"]
+  },
+
+  "rich-text#headline-banner-carousel-ofertas": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Revisa todas nuestras ofertas",
+      "blockClass": "HeadlineBannerCarousel"
+    }
+  },
+  "flex-layout.row#carousel-banner-ofertas-desk": {
+    "children": ["list-context.product-list#carousel-banner-ofertas-desk"]
+  },
+  "list-context.product-list#carousel-banner-ofertas-desk": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carousel-banner-ofertas-desk"],
+    "props": {
+      // "category": "137/138",
+      // "hideUnavailableItems": true,
+      // "maxItems": 10,
+      // "orderBy": "OrderByBestDiscountDESC",
+      // "skusFilter": "ALL_AVAILABLE",
+      // "queryField": "Yes",
+      // "mapField": "Promotion",
+      // "simulationBehavior": "default"
+      // "hideUnavailableItems": true,
+      "maxItems": 8,
+      "orderBy": "OrderByBestDiscountDESC",
+      "skusFilter": "ALL_AVAILABLE"
+    }
+  },
+  "slider-layout#carousel-banner-ofertas-desk": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#search-title-custom-ofertas": {
+    "props": {
+      "blockClass": ["StoreContainer", "DynamicTitleCustom"]
+    },
+    "children": ["search-title.v2"]
+  }
+}

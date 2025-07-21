@@ -1,0 +1,16 @@
+{
+  "store.custom#countdown1": {
+    "blocks": ["flex-layout.row#ContentCountdown", "__fold__.experimentalLazyAssets", "__fold__"]
+  },
+  "flex-layout.row#ContentCountdown": {
+    "props": {
+      "blockClass": ["StoreContainer", "SeparatorTopHome", "SeparatorBottom"],
+      "colSizing": "auto",
+      "fullWidth": false
+    },
+    "children": ["flex-layout.col#ContentCountdown"]
+  },
+  "flex-layout.col#ContentCountdown": {
+    //"children": ["countdown-template"]
+  }
+}

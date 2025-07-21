@@ -1,0 +1,279 @@
+:global(.vtex-account__order-details .center .list .db) {
+  display: none !important;
+}
+:global(.vtex-account__order-details .center .list .db):first-child {
+  display: inline-block !important;
+}
+
+/* Regiones Chile */
+/* option[value='Región Metropolitana'], */
+option[value='Los Ríos'],
+option[value='I Región'],
+option[value='II Región'],
+option[value='III Región'],
+option[value='IV Región'],
+/*option[value='V Región'],*/
+/*option[value='VI Región'],*/
+option[value='IX Región'],
+option[value='VII Región'],
+/*option[value='VIII Región'],*/
+option[value='X Región'],
+option[value='XI Región'],
+option[value='XII Región'],
+option[value='XIV Región'],
+option[value='XV Región'],
+option[value='XVI Región'] {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Región Metropolitana */
+option[value='Alhué___9650000'],
+/*option[value='Buin___9500000'],*/
+/*option[value='Calera De Tango___9560000'],*/
+option[value='Centro de Ski - El Colorado___7690002'],
+option[value='Centro de Ski - Farellones___7690003'],
+option[value='Centro de Ski - La Parva___7690004'],
+option[value='Centro de Ski - Valle Nevado___7690001'],
+/*option[value='Cerrillos___9200000'],*/
+/*option[value='Cerro Navia___9080000'],*/
+option[value='Chicureo___9350001'],
+/*option[value='Colina___9340000'],*/
+/*option[value='Conchalí___8540000'],*/
+option[value='Curacaví___9630000'],
+/*option[value='El Bosque___8010000'],*/
+/*option[value='El Monte___9810000'],*/
+/*option[value='Estación Central___9160000'],*/
+/*option[value='Huechuraba___8580000'],*/
+/*option[value='Independencia___8380000'],*/
+option[value='Isla De Maipo___9790000'],
+/*option[value='La Cisterna___7970000'],*/
+/*option[value='La Florida___8240000'],*/
+/*option[value='La Granja___8780000'],*/
+/*option[value='La Pintana___8820000'],*/
+/*option[value='La Reina___7850000'],*/
+/*option[value='Lampa___9380000'],*/
+/*option[value='Las Condes___7550000'],*/
+/*option[value='Lo Barnechea___7690000'],*/
+option[value='Lo Barnechea (Excepto Cordillera)___7690100'],
+/*option[value='Lo Espejo___9120000'],*/
+/*option[value='Lo Prado___8980000'],*/
+/*option[value='Macul___7810000'],*/
+/*option[value='Maipú___9250000'],*/
+option[value='María Pinto___9620000'],
+option[value='Melipilla___9580000'],
+/*option[value='Ñuñoa___7750000'],*/
+/*option[value='Padre Hurtado___9710000'],*/
+/*option[value='Paine___9540000'],*/
+/*option[value='Pedro Aguirre Cerda___8460000'],*/
+/*option[value='Peñaflor___9750000'],*/
+/*option[value='Peñalolén___7910000'],*/
+/*option[value='Pirque___9480000'],*/
+/*option[value='Providencia___7500000'],*/
+/*option[value='Pudahuel___9020000'],*/
+/*option[value='Puente Alto___8150000'],*/
+/*option[value='Quilicura___8700000'],*/
+/*option[value='Quinta Normal___8500000'],*/
+/*option[value='Recoleta___8420000'],*/
+/*option[value='Renca___8640000'],*/
+/*option[value='San Bernardo___8050000'],*/
+/*option[value='San Joaquín___8940000'],*/
+option[value='San José De Maipo___9460000'],
+/*option[value='San Miguel___8900000'],*/
+option[value='San Pedro___9660000'],
+/*option[value='San Ramón___8860000'],*/
+/*option[value='Santiago___8320000'],*/
+/*option[value='Talagante___9670000'],*/
+option[value='Tiltil___9420000']
+/*option[value='Vitacura___7630000']*/ {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Región de Valparaíso */
+/*option[value='Algarrobo___2710000'],*/
+option[value='Cabildo___2050000'],
+option[value='Calle Larga___2130000'],
+/*option[value='Cartagena___2680000'],*/
+option[value='Casablanca___2480000'],
+option[value='Catemu___2230000'],
+/*option[value='Concón___2510000'],*/
+/*option[value='El Quisco___2700000'],*/
+/*option[value='El Tabo___2690000'],*/
+option[value='Hijuelas___2310000'],
+option[value='Isla De Pascua___2770000'],
+option[value='Juan Fernández___2600000'],
+option[value='La Calera___2290000'],
+option[value='La Cruz___2280000'],
+option[value='La Ligua___2030000'],
+option[value='Limache___2240000'],
+option[value='Llay-Llay___2220000'],
+option[value='Los Andes___2100000'],
+option[value='Nogales___2300000'],
+option[value='Olmué___2330000'],
+option[value='Panquehue___2210000'],
+option[value='Papudo___2070000'],
+option[value='Petorca___2040000'],
+/*option[value='Puchuncaví___2500000'],*/
+option[value='Putaendo___2190000'],
+option[value='Quillota___2260000'],
+/*option[value='Quilpué___2420000'],*/
+option[value='Quintero___2490000'],
+option[value='Rinconada___2140000'],
+/*option[value='San Antonio___2660000'],*/
+option[value='San Esteban___2120000'],
+option[value='San Felipe___2170000'],
+option[value='Santa María___2200000'],
+option[value='Santo Domingo___2720000']
+/*option[value='Valparaíso___2340000'],*/
+/*option[value='Villa Alemana___2450000'],*/
+/*option[value='Viña Del Mar___2520000'],*/
+/*option[value='Zapallar___2060000']*/ {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Región del Libertador General Bernardo O'Higgins */
+option[value='Chépica___3120000'],
+option[value='Chimbarongo___3090000'],
+option[value='Codegua___2900000'],
+option[value='Coinco___3010000'],
+option[value='Coltauco___3000000'],
+option[value='Doñihue___3020000'],
+option[value='Graneros___2880000'],
+option[value='La Estrella___3250000'],
+option[value='Lago Rapel___3030001'],
+option[value='Las Cabras___3030000'],
+option[value='Litueche___3240000'],
+option[value='Lolol___3140000'],
+/*option[value='Machalí___2910000'],*/
+option[value='Malloa___2950000'],
+option[value='Marchigüe___3260000'],
+option[value='Mostazal___2890000'],
+option[value='Nancagua___3110000'],
+option[value='Navidad___3230000'],
+option[value='Olivar___2920000'],
+option[value='Palmilla___3160000'],
+option[value='Paredones___3270000'],
+option[value='Peralillo___3170000'],
+option[value='Peumo___2990000'],
+option[value='Pichidegua___2980000'],
+/*option[value='Pichilemu___3220000'],*/
+option[value='Placilla___3100000'],
+option[value='Pumanque___3150000'],
+option[value='Quinta De Tilcoco___2960000'],
+/*option[value='Rancagua___2820000'],*/
+/*option[value='Rengo___2940000'],*/
+option[value='Requinoa___2930000'],
+/*option[value='San Fernando___3070000'],*/
+option[value='San Vicente___2970000']
+/*option[value='Santa Cruz___3130000']*/ {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Región del Biobío */
+option[value='Alto Bío Bío___4590000'],
+option[value='Antuco___4490000'],
+option[value='Arauco___4360000'],
+option[value='Cabrero___4470000'],
+option[value='Cañete___4390000'],
+/*option[value='Chiguayante___4100000'],*/
+/*option[value='Concepción___4030000'],*/
+option[value='Contulmo___4400000'],
+/*option[value='Coronel___4190000'],*/
+option[value='Curanilahue___4370000'],
+option[value='Dichato___4160001'],
+option[value='Florida___4170000'],
+/*option[value='Hualpén___4600000'],*/
+option[value='Hualqui___4180000'],
+option[value='Laja___4560000'],
+option[value='Lebu___4350000'],
+option[value='Lirquen___4140001'],
+option[value='Los Alamos___4380000'],
+/*option[value='Los Ángeles___4430000'],*/
+/*option[value='Lota___4210000'],*/
+option[value='Mulchén___4530000'],
+option[value='Nacimiento___4550000'],
+option[value='Negrete___4540000'],
+/*option[value='Penco___4150000'],*/
+option[value='Pingueral___4160002'],
+option[value='Quilaco___4520000'],
+option[value='Quilleco___4500000'],
+option[value='Recinto___3880001'],
+/*option[value='San Pedro De la Paz___4130000'],*/
+option[value='San Rosendo___4570000'],
+option[value='Santa Bárbara___4510000'],
+option[value='Santa Juana___4230000'],
+/*option[value='Talcahuano___4260000'],*/
+option[value='Tirúa___4410000'],
+/*option[value='Tomé___4160000'],*/
+option[value='Tucapel___4480000'],
+option[value='Yumbel___4580000'] {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* a[href='#/cards'] {
+  display: none;
+} */
+
+a[href='#/addresses/new'] {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+a[href='#/cards/new'] {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.boxContainerFooter {
+  display: none;
+}
