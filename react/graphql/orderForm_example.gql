@@ -1,5 +1,0 @@
-# query OrderForm {
-#   orderForm @context(provider: "vtex.store-graphql") {
-#     salesChannel
-#   }
-# }

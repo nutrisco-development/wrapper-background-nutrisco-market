@@ -18,39 +18,33 @@
       "challenge": "challenge.profile"
     }
   },
-
   "store.login": {
-    "blocks": ["login-content"]
+    "blocks": ["login-content"],
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    }
   },
-
   "store.product-review-form": {
-    "blocks": ["product-review-form"]
+    "blocks": [],
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    }
   },
   "store.not-found#product": {
-    "props": {
-      "fullWidth": false
-    },
-    "blocks": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#notfound-0",
-      "flex-layout.row#notfound-1",
-      "flex-layout.row#notfound-2",
-      "flex-layout.row#notfound-4",
-      "flex-layout.row#notfound-5"
-    ]
+    "blocks": [],
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    }
   },
 
   "store.not-found#search": {
-    "props": {
-      "fullWidth": false
-    },
-    "blocks": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#notfound-0",
-      "flex-layout.row#notfound-1",
-      "flex-layout.row#notfound-2",
-      "flex-layout.row#notfound-4",
-      "flex-layout.row#notfound-5"
-    ]
+    "blocks": [],
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    }
   }
 }
